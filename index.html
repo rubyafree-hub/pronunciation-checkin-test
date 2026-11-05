@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#1d4ed8" />
+<title>HKDSE 发音听说打卡 · Day 1 测试页</title>
+<style>
+:root{
+  --bg:#f3f6fb; --card:#fff; --text:#0f172a; --muted:#64748b; --line:#e2e8f0;
+  --brand:#2563eb; --brand2:#1d4ed8; --brand-weak:#dbeafe;
+  --long:#2563eb; --long-bg:#dbeafe; --short:#059669; --short-bg:#d1fae5;
+  --ok:#059669; --ok-bg:#ecfdf5; --warn:#d97706; --bad:#dc2626; --bad-bg:#fef2f2;
+  --shadow:0 1px 2px rgba(15,23,42,.04),0 10px 28px -14px rgba(15,23,42,.18);
+  --r:16px;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  background:linear-gradient(180deg,#eef4ff 0%,var(--bg) 180px);
+  color:var(--text);
+  font:15px/1.55 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  padding-bottom:calc(88px + env(safe-area-inset-bottom));
+}
+#app{max-width:720px;margin:0 auto;padding:14px 14px 20px}
+h1{font-size:1.2rem;margin:0}
+h2{font-size:1.05rem;margin:0}
+h3{font-size:.98rem;margin:0}
+.muted{color:var(--muted)} .tiny{font-size:12px} .small{font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px;box-shadow:var(--shadow);margin-top:12px}
+.card.hero{background:linear-gradient(160deg,#eff6ff,#fff 55%);border-color:#bfdbfe}
+.row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.between{justify-content:space-between}
+.pill{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;padding:3px 9px;border-radius:999px;background:#f1f5f9;color:#475569}
+.pill.blue{background:var(--brand-weak);color:var(--brand2)}
+.pill.green{background:var(--short-bg);color:#047857}
+.pill.amber{background:#ffedd5;color:#c2410c}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  min-height:42px;padding:0 14px;border-radius:12px;border:0;cursor:pointer;
+  background:#f1f5f9;color:#334155;font:inherit;font-weight:650;font-size:14px;
+}
+.btn:active{transform:scale(.985)}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:0 8px 18px -10px rgba(37,99,235,.9)}
+.btn-danger{background:#ef4444;color:#fff}
+.btn-ghost{background:#fff;border:1px solid var(--line)}
+.btn-sm{min-height:34px;padding:0 10px;font-size:12.5px;border-radius:10px}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn-block{width:100%}
+.bar{height:8px;border-radius:99px;background:#e2e8f0;overflow:hidden}
+.bar>i{display:block;height:100%;background:linear-gradient(90deg,#60a5fa,#2563eb);border-radius:99px;width:0;transition:width .25s}
+input[type=text]{
+  width:100%;min-height:44px;border:1.5px solid var(--line);border-radius:12px;
+  padding:10px 12px;font:inherit;background:#fff;
+}
+input[type=text]:focus{outline:none;border-color:#93c5fd;box-shadow:0 0 0 3px #dbeafe}
+.day-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:10px}
+.day-btn{
+  aspect-ratio:1;border-radius:12px;border:1.5px solid var(--line);background:#fff;
+  font-weight:700;font-size:14px;color:#334155;cursor:pointer;
+}
+.day-btn.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+.day-btn.done{background:#d1fae5;color:#047857;border-color:#a7f3d0}
+.sec{margin-top:14px}
+.sec-hd{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px}
+.tip{font-size:12.5px;color:var(--muted);background:#f8fafc;border:1px dashed var(--line);border-radius:10px;padding:8px 10px;margin:8px 0}
+.item{
+  border:1px solid var(--line);border-radius:14px;padding:12px;margin-top:10px;background:#fff;
+}
+.item.done{border-color:#a7f3d0;background:#f0fdf4}
+.word{font-size:1.45rem;font-weight:760;letter-spacing:.2px}
+.ipa{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13.5px;color:#334155}
+.ipa .long{color:var(--long);background:var(--long-bg);border-radius:4px;padding:0 3px;font-weight:700}
+.ipa .short{color:var(--short);background:var(--short-bg);border-radius:4px;padding:0 3px;font-weight:700}
+.syls{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.syl{
+  min-width:44px;padding:8px 10px;border-radius:10px;border:1.5px solid var(--line);
+  background:#f8fafc;font-weight:700;cursor:pointer;text-align:center;
+}
+.syl.stress{border-color:#93c5fd;background:var(--brand-weak);color:var(--brand2);box-shadow:inset 0 -3px 0 #93c5fd}
+.syl.correct{border-color:#34d399;background:var(--ok-bg);color:#047857}
+.syl.wrong{border-color:#fca5a5;background:var(--bad-bg);color:#b91c1c}
+.pair{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:stretch}
+.pair .side{border:1px solid var(--line);border-radius:12px;padding:10px;text-align:center;background:#f8fafc}
+.pair .vs{align-self:center;color:var(--muted);font-weight:700}
+.controls{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.compare{
+  display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px;
+}
+.compare .box{border:1px solid var(--line);border-radius:12px;padding:10px;background:#f8fafc}
+.compare .box b{display:block;font-size:12px;color:var(--muted);margin-bottom:6px}
+.rec-panel{margin-top:10px;padding:10px;border-radius:12px;background:#f8fafc;border:1px dashed #cbd5e1}
+.rec-status{font-size:12.5px;color:var(--muted);margin-top:6px}
+.err{background:var(--bad-bg);color:#991b1b;border-radius:10px;padding:8px 10px;font-size:12.5px;margin-top:8px}
+.stars{display:flex;gap:6px;margin-top:8px}
+.star{width:42px;height:42px;border-radius:12px;border:1.5px solid var(--line);background:#fff;font-size:18px;cursor:pointer}
+.star.on{background:#fef3c7;border-color:#fbbf24}
+.tabs{
+  position:fixed;left:0;right:0;bottom:0;z-index:30;
+  display:grid;grid-template-columns:repeat(3,1fr);
+  background:rgba(255,255,255,.94);backdrop-filter:blur(10px);
+  border-top:1px solid var(--line);padding:6px 8px calc(6px + env(safe-area-inset-bottom));
+}
+.tabs button{background:none;border:0;padding:8px 4px;font:inherit;font-size:12px;color:#64748b;font-weight:650;cursor:pointer}
+.tabs button.on{color:var(--brand2)}
+.pass{font-size:15px;line-height:1.7;white-space:pre-wrap}
+.check{display:flex;align-items:center;gap:8px;margin-top:8px}
+.check input{width:18px;height:18px}
+.toast{
+  position:fixed;left:50%;bottom:96px;transform:translateX(-50%);
+  background:#0f172a;color:#fff;padding:10px 14px;border-radius:999px;font-size:13px;
+  opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90%;
+}
+.toast.show{opacity:1}
+.outline-row{display:flex;gap:8px;padding:8px 0;border-bottom:1px solid var(--line);align-items:flex-start}
+.outline-row:last-child{border-bottom:0}
+.outline-row .n{flex:0 0 42px;font-weight:800;color:var(--brand2)}
+textarea{width:100%;min-height:120px;border:1.5px solid var(--line);border-radius:12px;padding:10px;font:inherit;resize:vertical}
+.legend{display:flex;flex-wrap:wrap;gap:10px;font-size:12px;color:var(--muted);margin-top:8px}
+.dot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+audio{width:100%;height:36px}
+@media (max-width:420px){
+  .compare{grid-template-columns:1fr}
+  .pair{grid-template-columns:1fr; }
+  .pair .vs{text-align:center}
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<div class="toast" id="toast"></div>
+<script src="./content.js"></script>
+<script>
+(function(){
+'use strict';
+const DATA = window.PRONUNCIATION_DATA;
+const STORE_KEY = 'hkdse_pron_checkin_v1';
+const TARGET_RATE = 22050;
+
+/* ---------- storage ---------- */
+function loadStore(){
+  try{ return JSON.parse(localStorage.getItem(STORE_KEY)||'{}') || {}; }
+  catch(e){ return {}; }
+}
+function saveStore(s){ localStorage.setItem(STORE_KEY, JSON.stringify(s)); }
+function todayStr(){
+  const d=new Date();
+  const z=n=>String(n).padStart(2,'0');
+  return d.getFullYear()+'-'+z(d.getMonth()+1)+'-'+z(d.getDate());
+}
+function ensureStudent(s){
+  if(!s.studentName) s.studentName='';
+  if(!s.dayProgress) s.dayProgress={};
+  if(!s.history) s.history=[];
+  if(!s.ratings) s.ratings={};
+  if(!s.lastCheckIn) s.lastCheckIn='';
+  if(typeof s.streak!=='number') s.streak=0;
+  return s;
+}
+
+/* ---------- WAV encode / record (Web Audio PCM) ---------- */
+function writeStr(view, offset, str){
+  for(let i=0;i<str.length;i++) view.setUint8(offset+i, str.charCodeAt(i));
+}
+function encodeWav(float32, sampleRate){
+  // downsample to TARGET_RATE if needed
+  let samples = float32;
+  let rate = sampleRate;
+  if(sampleRate !== TARGET_RATE){
+    const ratio = sampleRate / TARGET_RATE;
+    const newLen = Math.floor(float32.length / ratio);
+    const out = new Float32Array(newLen);
+    for(let i=0;i<newLen;i++){
+      const idx = i * ratio;
+      const i0 = Math.floor(idx);
+      const i1 = Math.min(i0+1, float32.length-1);
+      const f = idx - i0;
+      out[i] = float32[i0]*(1-f) + float32[i1]*f;
+    }
+    samples = out; rate = TARGET_RATE;
+  }
+  const n = samples.length;
+  const buffer = new ArrayBuffer(44 + n*2);
+  const view = new DataView(buffer);
+  writeStr(view,0,'RIFF');
+  view.setUint32(4, 36 + n*2, true);
+  writeStr(view,8,'WAVE');
+  writeStr(view,12,'fmt ');
+  view.setUint32(16,16,true);
+  view.setUint16(20,1,true); // PCM
+  view.setUint16(22,1,true); // mono
+  view.setUint32(24,rate,true);
+  view.setUint32(28,rate*2,true);
+  view.setUint16(32,2,true);
+  view.setUint16(34,16,true);
+  writeStr(view,36,'data');
+  view.setUint32(40,n*2,true);
+  let off=44;
+  for(let i=0;i<n;i++){
+    let x = Math.max(-1, Math.min(1, samples[i]));
+    view.setInt16(off, x<0 ? x*0x8000 : x*0x7FFF, true);
+    off+=2;
+  }
+  return new Blob([buffer], {type:'audio/wav'});
+}
+
+const Rec = {
+  ctx:null, stream:null, node:null, source:null, chunks:[], recording:false, usingWorklet:false,
+  async ensureCtx(){
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if(!AC) throw new Error('此浏览器不支持 Web Audio API，无法录音。请换用较新的 Chrome / Edge / Safari。');
+    if(!this.ctx) this.ctx = new AC({sampleRate: TARGET_RATE});
+    if(this.ctx.state==='suspended') await this.ctx.resume();
+    return this.ctx;
+  },
+  supported(){
+    return !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && (window.AudioContext||window.webkitAudioContext));
+  },
+  async start(){
+    if(this.recording) return;
+    if(!window.isSecureContext && location.hostname!=='localhost' && location.hostname!=='127.0.0.1'){
+      throw new Error('麦克风需要在 HTTPS 或 localhost 下使用。请用本地服务器打开本页面，不要直接用文件协议。');
+    }
+    if(!this.supported()) throw new Error('当前环境不支持录音（缺少 getUserMedia 或 Web Audio）。');
+    const ctx = await this.ensureCtx();
+    try{
+      this.stream = await navigator.mediaDevices.getUserMedia({
+        audio:{ echoCancellation:true, noiseSuppression:true, channelCount:1 }
+      });
+    }catch(err){
+      const name = err && err.name;
+      if(name==='NotAllowedError' || name==='PermissionDeniedError')
+        throw new Error('麦克风权限被拒绝。请在浏览器地址栏允许麦克风后重试。');
+      if(name==='NotFoundError')
+        throw new Error('未找到麦克风设备。');
+      throw new Error('无法打开麦克风：'+(err.message||name||'未知错误'));
+    }
+    this.source = ctx.createMediaStreamSource(this.stream);
+    this.chunks = [];
+    this.recording = true;
+    // Prefer ScriptProcessor for widest compatibility (AudioWorklet needs separate file / blob URL)
+    const bufferSize = 4096;
+    if(ctx.createScriptProcessor){
+      this.node = ctx.createScriptProcessor(bufferSize, 1, 1);
+      this.node.onaudioprocess = (e)=>{
+        if(!this.recording) return;
+        const input = e.inputBuffer.getChannelData(0);
+        this.chunks.push(new Float32Array(input));
+      };
+      this.source.connect(this.node);
+      this.node.connect(ctx.destination);
+      // mute passthrough: gain 0
+      const gain = ctx.createGain(); gain.gain.value = 0;
+      this.node.disconnect();
+      this.source.connect(this.node);
+      this.node.connect(gain);
+      gain.connect(ctx.destination);
+      this._gain = gain;
+    } else {
+      throw new Error('此浏览器缺少 ScriptProcessor，无法录音。');
+    }
+  },
+  async stop(){
+    this.recording = false;
+    try{ if(this.node) this.node.disconnect(); }catch(e){}
+    try{ if(this._gain) this._gain.disconnect(); }catch(e){}
+    try{ if(this.source) this.source.disconnect(); }catch(e){}
+    if(this.stream){ this.stream.getTracks().forEach(t=>t.stop()); }
+    this.stream=null; this.source=null; this.node=null; this._gain=null;
+    if(!this.chunks.length) return null;
+    let total = 0; this.chunks.forEach(c=> total+=c.length);
+    const merged = new Float32Array(total);
+    let off=0;
+    for(const c of this.chunks){ merged.set(c, off); off+=c.length; }
+    const rate = (this.ctx && this.ctx.sampleRate) || TARGET_RATE;
+    return encodeWav(merged, rate);
+  }
+};
+
+/* ---------- model audio + speechSynthesis fallback ---------- */
+function audioUrl(name){
+  if(!name) return null;
+  return './audio/'+name;
+}
+function speakFallback(text, slow){
+  return new Promise((resolve)=>{
+    if(!window.speechSynthesis){ toast('此浏览器不支持语音合成'); resolve(false); return; }
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'en-GB';
+    u.rate = slow ? 0.75 : 1;
+    const voices = window.speechSynthesis.getVoices();
+    const gb = voices.find(v=>/en-GB/i.test(v.lang) && /female|sonia|libby|serena|emma|susan/i.test(v.name))
+      || voices.find(v=>/en-GB/i.test(v.lang))
+      || voices.find(v=>/^en/i.test(v.lang));
+    if(gb) u.voice = gb;
+    u.onend = ()=>resolve(true);
+    u.onerror = ()=>resolve(false);
+    window.speechSynthesis.speak(u);
+  });
+}
+async function playModel(file, text, slow, audioEl){
+  const url = audioUrl(file);
+  if(url && audioEl){
+    try{
+      audioEl.src = url;
+      audioEl.load();
+      await audioEl.play();
+      return 'file';
+    }catch(e){
+      // fall through
+    }
+  }
+  // try Audio element without UI
+  if(url){
+    try{
+      const a = new Audio(url);
+      await a.play();
+      return 'file';
+    }catch(e){}
+  }
+  await speakFallback(text, !!slow);
+  return 'tts-fallback';
+}
+
+/* ---------- UI helpers ---------- */
+const state = {
+  tab: 'practice', // practice | progress | feedback
+  dayId: 1,
+  store: ensureStudent(loadStore()),
+  recKey: null,
+  recBlob: null,
+  recUrl: null,
+  recording: false,
+  stressAnswers: {},
+};
+function toast(msg){
+  const el=document.getElementById('toast');
+  el.textContent=msg; el.classList.add('show');
+  clearTimeout(toast._t);
+  toast._t=setTimeout(()=>el.classList.remove('show'), 2200);
+}
+function dayData(id){ return DATA.days.find(d=>d.id===id) || DATA.days[0]; }
+function progressKey(dayId, itemKey){ return dayId+'::'+itemKey; }
+function isDone(dayId, itemKey){
+  const dp = state.store.dayProgress[String(dayId)] || {};
+  return !!dp[itemKey];
+}
+function setDone(dayId, itemKey, val){
+  const id=String(dayId);
+  if(!state.store.dayProgress[id]) state.store.dayProgress[id]={};
+  if(val) state.store.dayProgress[id][itemKey]=true;
+  else delete state.store.dayProgress[id][itemKey];
+  saveStore(state.store);
+}
+function countDay(day){
+  let total=0, done=0;
+  day.sections.forEach(sec=>{
+    const keys = itemKeysForSection(day.id, sec);
+    keys.forEach(k=>{ total++; if(isDone(day.id,k)) done++; });
+  });
+  return {total, done};
+}
+function itemKeysForSection(dayId, sec){
+  const keys=[];
+  const t=sec.type;
+  if(t==='vowels'||t==='syllables'||t==='stress_tap'){
+    sec.items.forEach((it,i)=> keys.push(sec.id+':'+i+(it.idSuffix?':'+it.idSuffix:'')));
+  } else if(t==='minimal_pairs'){
+    sec.pairs.forEach((_,i)=> keys.push(sec.id+':p'+i));
+  } else if(t==='sentences'||t==='tongue_twister'){
+    sec.items.forEach((_,i)=> keys.push(sec.id+':'+i));
+  } else if(t==='passage'){
+    keys.push(sec.id+':pass');
+  } else if(t==='weak_forms'){
+    sec.items.forEach((_,i)=> keys.push(sec.id+':w'+i));
+  }
+  return keys;
+}
+function highlightIpa(ipa, target, color){
+  if(!ipa) return '';
+  if(!target) return escapeHtml(ipa);
+  const cls = color==='short' ? 'short' : 'long';
+  // highlight first occurrence of target symbol sequence
+  const esc = target.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+  return escapeHtml(ipa).replace(new RegExp(esc), m=>'<span class="'+cls+'">'+m+'</span>');
+}
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, c=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
+}
+function sylDots(syl, stress){
+  return syl.map((s,i)=> i===stress ? '<b>'+escapeHtml(s)+'</b>' : escapeHtml(s)).join('<span class="muted"> · </span>');
+}
+
+/* ---------- recording UI actions ---------- */
+async function onRecStart(key){
+  try{
+    // iOS: resume on tap
+    await Rec.ensureCtx();
+    if(state.recUrl){ URL.revokeObjectURL(state.recUrl); state.recUrl=null; }
+    state.recBlob=null; state.recKey=key; state.recording=true;
+    await Rec.start();
+    toast('开始录音…');
+    render();
+  }catch(e){
+    state.recording=false;
+    toast(e.message||String(e));
+    render();
+  }
+}
+async function onRecStop(){
+  try{
+    const blob = await Rec.stop();
+    state.recording=false;
+    state.recBlob=blob;
+    if(blob){ state.recUrl = URL.createObjectURL(blob); toast('录音完成，可回放对比'); }
+    else toast('没有录到声音');
+    render();
+  }catch(e){
+    state.recording=false;
+    toast(e.message||String(e));
+    render();
+  }
+}
+function onRecPlay(){
+  const a=document.getElementById('student-playback');
+  if(a){ a.play().catch(()=>toast('无法播放录音')); }
+}
+function onRecDownload(){
+  if(!state.recBlob) return;
+  const a=document.createElement('a');
+  a.href=state.recUrl;
+  a.download='recording-'+todayStr()+'.wav';
+  a.click();
+}
+
+/* ---------- feedback ---------- */
+function updateStreakOnCheckIn(){
+  const t=todayStr();
+  const prev=state.store.lastCheckIn;
+  if(prev===t) return;
+  if(prev){
+    const a=new Date(prev+'T00:00:00');
+    const b=new Date(t+'T00:00:00');
+    const diff=Math.round((b-a)/86400000);
+    state.store.streak = (diff===1) ? (state.store.streak||0)+1 : 1;
+  } else state.store.streak=1;
+  state.store.lastCheckIn=t;
+}
+function buildFeedback(){
+  const day=dayData(state.dayId);
+  const {total,done}=countDay(day);
+  const name=state.store.studentName||'同学';
+  const stars=state.store.ratings[String(state.dayId)]||0;
+  const starStr = stars ? ('★'.repeat(stars)+'☆'.repeat(5-stars)+`（${stars}/5）`) : '未自评';
+  const lines=[
+    `【发音听说打卡】${todayStr()}`,
+    `学生：${name}`,
+    `内容：${day.title}`,
+    `焦点：${day.focusZh}`,
+    `完成：${done}/${total} 项`,
+    `连续打卡：${state.store.streak||0} 天`,
+    `自评：${starStr}`,
+    `说明：已听示范（英式）、录音并回放对比。`,
+    `#HKDSE #发音打卡 #Day${day.id}`
+  ];
+  return lines.join('\n');
+}
+
+/* ---------- render ---------- */
+function render(){
+  const app=document.getElementById('app');
+  if(state.tab==='practice') app.innerHTML = viewPractice();
+  else if(state.tab==='progress') app.innerHTML = viewProgress();
+  else app.innerHTML = viewFeedback();
+  app.insertAdjacentHTML('beforeend', tabBar());
+  bind();
+}
+function tabBar(){
+  return `<nav class="tabs">
+    <button data-tab="practice" class="${state.tab==='practice'?'on':''}">练习</button>
+    <button data-tab="progress" class="${state.tab==='progress'?'on':''}">进度</button>
+    <button data-tab="feedback" class="${state.tab==='feedback'?'on':''}">打卡反馈</button>
+  </nav>`;
+}
+function viewPractice(){
+  const day=dayData(state.dayId);
+  const {total,done}=countDay(day);
+  const pct = total? Math.round(done/total*100):0;
+  let html = `
+  <div class="card hero">
+    <div class="row between">
+      <div>
+        <div class="pill blue">B1 · 高二 · 英式 RP</div>
+        <h1 style="margin-top:8px">${escapeHtml(DATA.meta.title)}</h1>
+        <div class="muted tiny" style="margin-top:4px">示范音：${escapeHtml(DATA.meta.voice)} · 学生录音：WAV</div>
+      </div>
+      <div style="text-align:right">
+        <div class="muted tiny">连续打卡</div>
+        <div style="font-size:22px;font-weight:800;color:var(--brand2)">${state.store.streak||0}</div>
+      </div>
+    </div>
+    <div class="row" style="margin-top:10px;gap:8px">
+      <input type="text" id="student-name" placeholder="输入学生姓名" value="${escapeHtml(state.store.studentName||'')}" style="flex:1" />
+    </div>
+    <div class="muted tiny" style="margin-top:8px">选择天数（课堂约 4 天教完，任务跑满 7 天）</div>
+    <div class="day-grid" id="day-grid">
+      ${DATA.days.map(d=>{
+        const c=countDay(d); const all=c.total&&c.done===c.total;
+        return `<button class="day-btn ${d.id===state.dayId?'on':''} ${all?'done':''}" data-day="${d.id}">${d.id}</button>`;
+      }).join('')}
+    </div>
+    <div style="margin-top:12px">
+      <div class="row between"><b>${escapeHtml(day.title)}</b><span class="pill">${done}/${total}</span></div>
+      <div class="muted small" style="margin-top:4px">${escapeHtml(day.focusZh)}</div>
+      <div class="bar mt" style="margin-top:8px"><i style="width:${pct}%"></i></div>
+      <div class="legend"><span><i class="dot" style="background:var(--long)"></i>长元音高亮</span><span><i class="dot" style="background:var(--short)"></i>短元音高亮</span></div>
+      ${day.noteZh?`<div class="tip">${escapeHtml(day.noteZh)}</div>`:''}
+    </div>
+  </div>`;
+  day.sections.forEach(sec=>{ html += renderSection(day, sec); });
+  html += `<div class="card"><h3>7 日音素大纲</h3>
+    ${DATA.meta.outline.map(o=>`<div class="outline-row"><div class="n">D${o.day}</div><div><b>${escapeHtml(o.theme)}</b><div class="muted tiny">${escapeHtml(o.phones)}</div></div></div>`).join('')}
+    <div class="tip">${escapeHtml(DATA.meta.phonemeNote)}</div>
+  </div>`;
+  return html;
+}
+function recControls(key, modelFile, modelText, modelSlowFile){
+  const active = state.recKey===key;
+  const has = active && state.recUrl;
+  const recording = state.recording && active;
+  return `<div class="rec-panel" data-reckey="${escapeHtml(key)}">
+    <div class="row between"><b class="small">录音对比（WAV）</b>
+      <span class="pill ${Rec.supported()?'green':'amber'}">${Rec.supported()?'Web Audio 可用':'不支持录音'}</span>
+    </div>
+    <div class="controls">
+      <button class="btn btn-sm btn-ghost" data-act="model" data-file="${escapeHtml(modelFile||'')}" data-text="${escapeHtml(modelText||'')}">▶ 示范</button>
+      <button class="btn btn-sm btn-ghost" data-act="model-slow" data-file="${escapeHtml(modelSlowFile||'')}" data-text="${escapeHtml(modelText||'')}" data-slow="1">慢速示范</button>
+      ${!recording
+        ? `<button class="btn btn-sm btn-primary" data-act="rec-start" data-key="${escapeHtml(key)}">● 录音</button>`
+        : `<button class="btn btn-sm btn-danger" data-act="rec-stop">■ 停止</button>`}
+      <button class="btn btn-sm btn-ghost" data-act="rec-play" ${has?'':'disabled'}>回放我的</button>
+      <button class="btn btn-sm btn-ghost" data-act="rec-dl" ${has?'':'disabled'}>下载 WAV</button>
+      <button class="btn btn-sm btn-ghost" data-act="rec-reset" data-key="${escapeHtml(key)}" ${has||recording?'':'disabled'}>重录</button>
+    </div>
+    <div class="compare">
+      <div class="box"><b>示范音（英式）</b>
+        <audio controls preload="none" class="model-audio" src="${modelFile?audioUrl(modelFile):''}"></audio>
+      </div>
+      <div class="box"><b>我的录音</b>
+        ${has?`<audio id="student-playback" controls src="${state.recUrl}"></audio>`:'<div class="muted tiny">录完后这里回放</div>'}
+      </div>
+    </div>
+    <div class="rec-status">${recording?'正在录音… 再次点击停止。请允许麦克风权限。':(has?'可并排对比示范与自己的录音。':'建议：先听示范 → 录音 → 回放对比。')}</div>
+    <div class="muted tiny" style="margin-top:4px">提示：麦克风需 HTTPS 或 localhost；iOS 需点击后才会启动音频。</div>
+  </div>`;
+}
+function doneToggle(dayId, key, label){
+  const on=isDone(dayId,key);
+  return `<label class="check"><input type="checkbox" data-done="${dayId}" data-key="${escapeHtml(key)}" ${on?'checked':''}/> <span class="small">${label||'本项完成'}</span></label>`;
+}
+function renderSection(day, sec){
+  let body='';
+  const t=sec.type;
+  if(t==='vowels' || t==='syllables'){
+    sec.items.forEach((it,i)=>{
+      const key=sec.id+':'+i+(it.idSuffix?':'+it.idSuffix:'');
+      const color = sec.color||'long';
+      body += `<div class="item ${isDone(day.id,key)?'done':''}">
+        <div class="row between">
+          <div><div class="word">${escapeHtml(it.word)}</div>
+          <div class="ipa">${highlightIpa(it.ipa, it.target, color)}</div></div>
+          <span class="pill ${color==='short'?'green':'blue'}">/${escapeHtml(it.target||'')}/</span>
+        </div>
+        <div class="muted small" style="margin-top:4px">${escapeHtml(it.gloss||'')}</div>
+        <div class="small" style="margin-top:6px">音节：${sylDots(it.syl, it.stress)}</div>
+        ${it.ex?`<div class="tip" style="margin-top:8px">${escapeHtml(it.ex)}</div>`:''}
+        ${recControls(key, it.audio, it.word, it.audioSlow)}
+        ${doneToggle(day.id,key)}
+      </div>`;
+    });
+  } else if(t==='minimal_pairs'){
+    sec.pairs.forEach((p,i)=>{
+      const key=sec.id+':p'+i;
+      body += `<div class="item ${isDone(day.id,key)?'done':''}">
+        <div class="pair">
+          <div class="side"><div class="word">${escapeHtml(p.a.word)}</div><div class="ipa">${escapeHtml(p.a.ipa)}</div>
+            <button class="btn btn-sm btn-ghost" style="margin-top:6px" data-act="model" data-file="${escapeHtml(p.a.audio||'')}" data-text="${escapeHtml(p.a.word)}">听 A</button>
+          </div>
+          <div class="vs">VS</div>
+          <div class="side"><div class="word">${escapeHtml(p.b.word)}</div><div class="ipa">${escapeHtml(p.b.ipa)}</div>
+            <button class="btn btn-sm btn-ghost" style="margin-top:6px" data-act="model" data-file="${escapeHtml(p.b.audio||'')}" data-text="${escapeHtml(p.b.word)}">听 B</button>
+          </div>
+        </div>
+        <div class="muted small" style="margin-top:8px">${escapeHtml(p.note||'')}</div>
+        ${recControls(key, p.a.audio, p.a.word+' ... '+p.b.word, p.a.audioSlow)}
+        ${doneToggle(day.id,key,'对比跟读完成')}
+      </div>`;
+    });
+  } else if(t==='stress_tap'){
+    sec.items.forEach((it,i)=>{
+      const key=sec.id+':'+i+(it.idSuffix?':'+it.idSuffix:'');
+      const ans = state.stressAnswers[key];
+      body += `<div class="item ${isDone(day.id,key)?'done':''}">
+        <div class="row between"><div class="word">${escapeHtml(it.word)}</div><span class="pill">点重音</span></div>
+        <div class="ipa">${escapeHtml(it.ipa)}</div>
+        <div class="muted small">${escapeHtml(it.gloss||'')}</div>
+        <div class="controls">
+          <button class="btn btn-sm btn-ghost" data-act="model" data-file="${escapeHtml(it.audio||'')}" data-text="${escapeHtml(it.word)}">▶ 听</button>
+          <button class="btn btn-sm btn-ghost" data-act="model-slow" data-file="${escapeHtml(it.audioSlow||'')}" data-text="${escapeHtml(it.word)}">慢速</button>
+        </div>
+        <div class="syls" data-stress-key="${escapeHtml(key)}" data-stress-ans="${it.stress}">
+          ${it.syl.map((s,si)=>`<button type="button" class="syl ${ans===si?(si===it.stress?'correct':'wrong'):''} ${si===it.stress && ans===si?'stress':''}" data-syl="${si}">${escapeHtml(s)}</button>`).join('')}
+        </div>
+        <div class="muted tiny" style="margin-top:6px">先听，再点你认为带主重音 ˈ 的音节。</div>
+        ${recControls(key, it.audio, it.word, it.audioSlow)}
+        ${doneToggle(day.id,key)}
+      </div>`;
+    });
+  } else if(t==='sentences' || t==='tongue_twister'){
+    sec.items.forEach((it,i)=>{
+      const key=sec.id+':'+i;
+      body += `<div class="item ${isDone(day.id,key)?'done':''}">
+        <div class="pass">${escapeHtml(it.en)}</div>
+        <div class="muted small" style="margin-top:4px">焦点：${escapeHtml(it.focus||'')}</div>
+        ${recControls(key, it.audio, it.en, it.audioSlow)}
+        ${doneToggle(day.id,key)}
+      </div>`;
+    });
+  } else if(t==='passage'){
+    const key=sec.id+':pass';
+    body += `<div class="item ${isDone(day.id,key)?'done':''}">
+      <h3>${escapeHtml(sec.titlePassage||'')}</h3>
+      <div class="pass" style="margin-top:8px">${escapeHtml(sec.text)}</div>
+      <div class="muted small" style="margin-top:6px">焦点词：${escapeHtml(sec.focus||'')}</div>
+      ${recControls(key, sec.audio, sec.text, sec.audioSlow)}
+      ${doneToggle(day.id,key,'短文朗读完成')}
+    </div>`;
+  } else if(t==='weak_forms'){
+    sec.items.forEach((it,i)=>{
+      const key=sec.id+':w'+i;
+      body += `<div class="item ${isDone(day.id,key)?'done':''}">
+        <div class="muted small">${escapeHtml(it.note||'')}</div>
+        <div class="pair" style="margin-top:8px">
+          <div class="side"><b class="tiny">强调</b><div>${escapeHtml(it.strong)}</div><div class="ipa">${escapeHtml(it.strongIpa)}</div>
+            <button class="btn btn-sm btn-ghost" style="margin-top:6px" data-act="model" data-file="${escapeHtml(it.strongAudio||'')}" data-text="${escapeHtml(it.strong)}">听强调</button>
+          </div>
+          <div class="vs">→</div>
+          <div class="side"><b class="tiny">弱读</b><div>${escapeHtml(it.weak)}</div><div class="ipa">${escapeHtml(it.weakIpa)}</div>
+            <button class="btn btn-sm btn-ghost" style="margin-top:6px" data-act="model" data-file="${escapeHtml(it.weakAudio||'')}" data-text="${escapeHtml(it.weak)}">听弱读</button>
+          </div>
+        </div>
+        ${recControls(key, it.weakAudio, it.weak, null)}
+        ${doneToggle(day.id,key)}
+      </div>`;
+    });
+  }
+  return `<section class="card sec" id="${escapeHtml(sec.id)}">
+    <div class="sec-hd"><div><h2>${escapeHtml(sec.titleZh)}</h2><div class="muted tiny">${escapeHtml(sec.titleEn||'')}</div></div></div>
+    <div class="tip">${escapeHtml(sec.tipZh||'')}</div>
+    ${body}
+  </section>`;
+}
+function viewProgress(){
+  let rows='';
+  DATA.days.forEach(d=>{
+    const {total,done}=countDay(d);
+    const pct=total?Math.round(done/total*100):0;
+    rows += `<div class="item"><div class="row between"><b>Day ${d.id}</b><span class="pill">${done}/${total} · ${pct}%</span></div>
+      <div class="muted small">${escapeHtml(d.titleEn)}</div>
+      <div class="bar" style="margin-top:8px"><i style="width:${pct}%"></i></div></div>`;
+  });
+  return `<div class="card hero"><h1>学习进度</h1>
+    <div class="muted small">姓名：${escapeHtml(state.store.studentName||'未填写')} · 连续打卡 ${state.store.streak||0} 天</div>
+    <div class="muted tiny" style="margin-top:6px">进度保存在本机 localStorage，换设备不会同步。</div></div>
+    <div class="card">${rows}</div>`;
+}
+function viewFeedback(){
+  const day=dayData(state.dayId);
+  const stars=state.store.ratings[String(state.dayId)]||0;
+  const fb=buildFeedback();
+  return `<div class="card hero"><h1>生成打卡反馈</h1>
+    <div class="muted small">复制后可发到微信群给家长 / 老师。</div>
+    <div style="margin-top:10px"><label class="small muted">当前 Day</label>
+      <div class="day-grid">${DATA.days.map(d=>`<button class="day-btn ${d.id===state.dayId?'on':''}" data-day="${d.id}">${d.id}</button>`).join('')}</div>
+    </div>
+    <div style="margin-top:12px"><div class="small muted">自评星级</div>
+      <div class="stars">${[1,2,3,4,5].map(n=>`<button class="star ${stars>=n?'on':''}" data-star="${n}">★</button>`).join('')}</div>
+    </div>
+    <button class="btn btn-primary btn-block" style="margin-top:14px" id="btn-gen">生成打卡反馈</button>
+    <button class="btn btn-ghost btn-block" style="margin-top:8px" id="btn-checkin">标记今日打卡</button>
+  </div>
+  <div class="card">
+    <h3>反馈预览</h3>
+    <textarea id="fb-text">${escapeHtml(fb)}</textarea>
+    <button class="btn btn-primary btn-block" style="margin-top:10px" id="btn-copy">复制到剪贴板</button>
+  </div>`;
+}
+function bind(){
+  document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{ state.tab=b.dataset.tab; render(); });
+  document.querySelectorAll('[data-day]').forEach(b=>b.onclick=()=>{ state.dayId=+b.dataset.day; render(); });
+  const name=document.getElementById('student-name');
+  if(name){ name.onchange=name.onblur=()=>{ state.store.studentName=name.value.trim(); saveStore(state.store); }; }
+  document.querySelectorAll('[data-done]').forEach(cb=>{
+    cb.onchange=()=>{ setDone(+cb.dataset.done, cb.dataset.key, cb.checked); render(); };
+  });
+  document.querySelectorAll('[data-act]').forEach(btn=>{
+    btn.onclick = async ()=>{
+      const act=btn.dataset.act;
+      if(act==='model' || act==='model-slow'){
+        const slow=act==='model-slow' || btn.dataset.slow;
+        const text=btn.dataset.text||'';
+        let file=btn.dataset.file||'';
+        // for slow, prefer matching audioSlow if we can find from text — content may not wire data-file for slow
+        const panel=btn.closest('.item');
+        await playModel(file, text, !!slow, panel && panel.querySelector('.model-audio'));
+      } else if(act==='rec-start'){ await onRecStart(btn.dataset.key); }
+      else if(act==='rec-stop'){ await onRecStop(); }
+      else if(act==='rec-play'){ onRecPlay(); }
+      else if(act==='rec-dl'){ onRecDownload(); }
+      else if(act==='rec-reset'){
+        if(state.recording) await onRecStop();
+        if(state.recUrl) URL.revokeObjectURL(state.recUrl);
+        state.recUrl=null; state.recBlob=null; state.recKey=btn.dataset.key; state.recording=false;
+        render(); toast('可以重新录音');
+      }
+    };
+  });
+  document.querySelectorAll('[data-stress-key]').forEach(wrap=>{
+    const key=wrap.dataset.stressKey; const ans=+wrap.dataset.stressAns;
+    wrap.querySelectorAll('[data-syl]').forEach(b=>{
+      b.onclick=()=>{
+        const si=+b.dataset.syl;
+        state.stressAnswers[key]=si;
+        if(si===ans){ toast('重音正确'); setDone(state.dayId, key, true); }
+        else toast('再听一次，注意 ˈ 标记');
+        render();
+      };
+    });
+  });
+  document.querySelectorAll('[data-star]').forEach(b=>{
+    b.onclick=()=>{
+      state.store.ratings[String(state.dayId)] = +b.dataset.star;
+      saveStore(state.store); render();
+    };
+  });
+  const gen=document.getElementById('btn-gen');
+  if(gen) gen.onclick=()=>{
+    const t=document.getElementById('fb-text'); if(t) t.value=buildFeedback();
+    toast('已生成反馈文案');
+  };
+  const copy=document.getElementById('btn-copy');
+  if(copy) copy.onclick=async ()=>{
+    const t=document.getElementById('fb-text').value;
+    try{ await navigator.clipboard.writeText(t); toast('已复制'); }
+    catch(e){ toast('复制失败，请手动全选复制'); }
+  };
+  const ci=document.getElementById('btn-checkin');
+  if(ci) ci.onclick=()=>{
+    updateStreakOnCheckIn();
+    state.store.history.push({date:todayStr(), day:state.dayId, rating:state.store.ratings[String(state.dayId)]||0});
+    saveStore(state.store); render(); toast('今日打卡已记录');
+  };
+}
+
+// Warm voices
+if(window.speechSynthesis){ window.speechSynthesis.getVoices(); window.speechSynthesis.onvoiceschanged=()=>{}; }
+
+if(!DATA){ document.getElementById('app').innerHTML='<div class="card"><h1>缺少 content.js</h1></div>'; }
+else render();
+})();
+</script>
+</body>
+</html>
