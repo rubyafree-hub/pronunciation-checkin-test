@@ -42,8 +42,7 @@ window.PRONUNCIATION_DATA = {
         "phones": "ɪə eə ʊə + 弱读复习",
         "theme": "集中双元音 + 总复习"
       }
-    ],
-    "testNote": "公开测试页：仅完整开放 Day 1；Day 2–7 显示为即将开放。"
+    ]
   },
   "days": [
     {
@@ -475,15 +474,15 @@ window.PRONUNCIATION_DATA = {
                 "word": "sheep",
                 "ipa": "/ʃiːp/",
                 "target": "iː",
-                "audio": "n-pa-sheep-n-09656bc390.wav",
-                "audioSlow": "slow-pa-sheep-25-7613d6dbd4.wav"
+                "audio": "mp-sheep-a-sheep-0-5b39e28a5f.wav",
+                "audioSlow": "mp-sheep-a-sheep-25-682d8e918e.wav"
               },
               "b": {
                 "word": "ship",
                 "ipa": "/ʃɪp/",
                 "target": "ɪ",
-                "audio": "n-pb-ship-n-edd8b83f66.wav",
-                "audioSlow": "slow-pb-ship-25-e5b4b818dc.wav"
+                "audio": "pairfix-ship-52010b58e1.wav",
+                "audioSlow": "pairfixslow-ship-eb96ae7bb2.wav"
               },
               "note": "紧张的 /iː/ vs 放松的 /ɪ/"
             },
@@ -509,15 +508,15 @@ window.PRONUNCIATION_DATA = {
                 "word": "pool",
                 "ipa": "/puːl/",
                 "target": "uː",
-                "audio": "n-pa-pool-n-185327352c.wav",
-                "audioSlow": "slow-pa-pool-25-ec17782c6f.wav"
+                "audio": "pairfix-pool-bb9b7c3f7b.wav",
+                "audioSlow": "pairfixslow-pool-2fe28fb081.wav"
               },
               "b": {
                 "word": "pull",
                 "ipa": "/pʊl/",
                 "target": "ʊ",
-                "audio": "n-pb-pull-n-079ae489fd.wav",
-                "audioSlow": "slow-pb-pull-25-c64ea618f1.wav"
+                "audio": "pairfix-pull-4a4d9ee223.wav",
+                "audioSlow": "pairfixslow-pull-9b17754541.wav"
               },
               "note": "/uː/ 嘴更圆、更前"
             },
@@ -526,15 +525,15 @@ window.PRONUNCIATION_DATA = {
                 "word": "food",
                 "ipa": "/fuːd/",
                 "target": "uː",
-                "audio": "n-pa-food-n-7a7c83fbf4.wav",
-                "audioSlow": "slow-pa-food-25-c32de1ab6c.wav"
+                "audio": "mp-food-good-food-0-49aae5d592.wav",
+                "audioSlow": "mp-food-good-food-25-b04b557299.wav"
               },
               "b": {
                 "word": "foot",
                 "ipa": "/fʊt/",
                 "target": "ʊ",
-                "audio": "n-pb-foot-n-7b6e1dc94b.wav",
-                "audioSlow": "slow-pb-foot-25-a58ffc3d64.wav"
+                "audio": "mp-foot-left-foot-0-458f72b120.wav",
+                "audioSlow": "mp-foot-left-foot-25-b37ffe9bd6.wav"
               },
               "note": "注意元音长短与口型"
             },
@@ -543,15 +542,15 @@ window.PRONUNCIATION_DATA = {
                 "word": "cart",
                 "ipa": "/kɑːt/",
                 "target": "ɑː",
-                "audio": "n-pa-cart-n-cc55a78e29.wav",
-                "audioSlow": "slow-pa-cart-25-33e8df9c4d.wav"
+                "audio": "mp-cart-a-cart-0-d2ce15a69e.wav",
+                "audioSlow": "mp-cart-a-cart-25-4e1b6fa1d3.wav"
               },
               "b": {
                 "word": "cut",
                 "ipa": "/kʌt/",
                 "target": "ʌ",
-                "audio": "n-pb-cut-n-49b07fcf99.wav",
-                "audioSlow": "slow-pb-cut-25-4bb31ca267.wav"
+                "audio": "mp-cut-a-cut-0-c3234cb582.wav",
+                "audioSlow": "mp-cut-a-cut-25-152b9c26c4.wav"
               },
               "note": "/ɑː/ 口大而开"
             },
@@ -560,15 +559,15 @@ window.PRONUNCIATION_DATA = {
                 "word": "caught",
                 "ipa": "/kɔːt/",
                 "target": "ɔː",
-                "audio": "n-pa-caught-n-e4f93f6fa4.wav",
-                "audioSlow": "slow-pa-caught-25-f5b10e70e2.wav"
+                "audio": "mp-caught-i-caught-it-0-dd79fe1b2e.wav",
+                "audioSlow": "mp-caught-i-caught-it-25-5a178dfad8.wav"
               },
               "b": {
                 "word": "cot",
                 "ipa": "/kɒt/",
                 "target": "ɒ",
-                "audio": "n-pb-cot-n-6c1054b7b3.wav",
-                "audioSlow": "slow-pb-cot-25-7fb2b9e7e0.wav"
+                "audio": "mp-cot-baby-cot-0-924ec8b622.wav",
+                "audioSlow": "mp-cot-baby-cot-25-c1496d715f.wav"
               },
               "note": "英式 /ɔː/ 与 /ɒ/ 要分开"
             }
@@ -729,8 +728,9 @@ window.PRONUNCIATION_DATA = {
               ],
               "stress": 0,
               "gloss": "礼物；现在的（名词/形容词）",
-              "audio": "n-present-n-af323ea8d1.wav",
-              "audioSlow": "slow-present-25-5529fa8c83.wav"
+              "audio": "w-present-a-present-0-878660c1f4.wav",
+              "audioSlow": "w-present-a-present-25-11a767ef8b.wav",
+              "audioNote": "noun reading via carrier phrase"
             },
             {
               "word": "present",
@@ -742,8 +742,9 @@ window.PRONUNCIATION_DATA = {
               "stress": 1,
               "gloss": "提交；呈现（动词）",
               "idSuffix": "v",
-              "audio": "n-present-n-af323ea8d1.wav",
-              "audioSlow": "slow-present-25-5529fa8c83.wav"
+              "audio": "fixv-present-n-0-43eb8ad831.wav",
+              "audioSlow": "fixv-present-s-25-93664bb43e.wav",
+              "audioNote": "verb reading via carrier phrase"
             },
             {
               "word": "record",
@@ -755,8 +756,9 @@ window.PRONUNCIATION_DATA = {
               "stress": 0,
               "gloss": "记录；唱片（名词）",
               "idSuffix": "n",
-              "audio": "n-recordn-n-2f8b57402d.wav",
-              "audioSlow": "slow-recordn-25-912586e6a0.wav"
+              "audio": "w-record-a-record-0-58f015ea65.wav",
+              "audioSlow": "w-record-a-record-25-c51ac7e13c.wav",
+              "audioNote": "noun reading via carrier phrase"
             },
             {
               "word": "record",
@@ -768,8 +770,9 @@ window.PRONUNCIATION_DATA = {
               "stress": 1,
               "gloss": "录音；记录（动词）",
               "idSuffix": "v",
-              "audio": "n-recordn-n-2f8b57402d.wav",
-              "audioSlow": "slow-recordn-25-912586e6a0.wav"
+              "audio": "w-record-i-will-record-0-b176bcd4b9.wav",
+              "audioSlow": "w-record-i-will-record-25-b21624ae3f.wav",
+              "audioNote": "verb reading via carrier phrase"
             },
             {
               "word": "economy",
@@ -810,27 +813,31 @@ window.PRONUNCIATION_DATA = {
           "items": [
             {
               "en": "I need to improve my performance before the next interview.",
-              "focus": "improve / performance / interview",
-              "audio": "n-s1-0-n-208a51889a.wav",
-              "audioSlow": "slow-s1-0-20-39d4cb9995.wav"
+              "focus": "need / improve / performance / interview / i",
+              "audio": "sent-d1-sentences-0-n-i-need-to-improve-my-performan-b1b9f1b4db.wav",
+              "audioSlow": "sent-d1-sentences-0-s-i-need-to-improve-my-performan-660e4bdc02.wav",
+              "focusNote": "Content-word peaks from model audio energy (WordBoundary)."
             },
             {
               "en": "Protecting the environment is an important challenge for everyone.",
-              "focus": "environment / important / challenge",
-              "audio": "n-s1-1-n-5703c16f13.wav",
-              "audioSlow": "slow-s1-1-20-5d8dcd328e.wav"
+              "focus": "environment / important / protecting / challenge / everyone",
+              "audio": "sent-d1-sentences-1-n-protecting-the-environment-is--d6a80407fe.wav",
+              "audioSlow": "sent-d1-sentences-1-s-protecting-the-environment-is--1af5fd3f1d.wav",
+              "focusNote": "Content-word peaks from model audio energy (WordBoundary)."
             },
             {
               "en": "She made a decision to study technology at university.",
-              "focus": "decision / technology / university",
-              "audio": "n-s1-2-n-6565dd0a7b.wav",
-              "audioSlow": "slow-s1-2-20-d4693680c2.wav"
+              "focus": "made / decision / technology / university / study",
+              "audio": "sent-d1-sentences-2-n-she-made-a-decision-to-study-t-cfc5cb91ee.wav",
+              "audioSlow": "sent-d1-sentences-2-s-she-made-a-decision-to-study-t-ab756f3bd9.wav",
+              "focusNote": "Content-word peaks from model audio energy (WordBoundary)."
             },
             {
               "en": "Personally, I think culture and knowledge open more opportunities.",
-              "focus": "personally / culture / knowledge / opportunities",
-              "audio": "n-s1-3-n-10aa25b729.wav",
-              "audioSlow": "slow-s1-3-20-d8a85b5e5c.wav"
+              "focus": "more / knowledge / think / open / personally",
+              "audio": "sent-d1-sentences-3-n-personally-i-think-culture-and-18a0f4ce42.wav",
+              "audioSlow": "sent-d1-sentences-3-s-personally-i-think-culture-and-c285f0b66e.wav",
+              "focusNote": "Content-word peaks from model audio energy (WordBoundary)."
             }
           ]
         },
@@ -843,15 +850,17 @@ window.PRONUNCIATION_DATA = {
           "items": [
             {
               "en": "She seeks cheap seats in the city centre each evening.",
-              "focus": "/iː/ vs /ɪ/",
-              "audio": "n-tt1-0-n-b763453d53.wav",
-              "audioSlow": "slow-tt1-0-25-e99fd04088.wav"
+              "focus": "seeks / cheap / evening / city / seats",
+              "audio": "sent-d1-tt-0-n-she-seeks-cheap-seats-in-the-city-cen-0e00399cbc.wav",
+              "audioSlow": "sent-d1-tt-0-s-she-seeks-cheap-seats-in-the-city-cen-a76c66a45c.wav",
+              "focusNote": "Content-word peaks from model audio energy (WordBoundary)."
             },
             {
               "en": "Good cooks look for sugar and put pudding in a cookbook.",
-              "focus": "/ʊ/",
-              "audio": "n-tt1-1-n-96cc4d4e67.wav",
-              "audioSlow": "slow-tt1-1-25-7b8cd3caff.wav"
+              "focus": "pudding / good / sugar / look / put",
+              "audio": "sent-d1-tt-1-n-good-cooks-look-for-sugar-and-put-pud-ca5c852492.wav",
+              "audioSlow": "sent-d1-tt-1-s-good-cooks-look-for-sugar-and-put-pud-82f4780a43.wav",
+              "focusNote": "Content-word peaks from model audio energy (WordBoundary)."
             }
           ]
         },
@@ -864,8 +873,8 @@ window.PRONUNCIATION_DATA = {
           "titlePassage": "Choosing a future path",
           "text": "Many Senior Two students feel pressure when they think about university and future careers. Some want to study technology, while others prefer education or the environment. Making a decision is never easy, but practice and research can help. Personally, I believe that if we improve our communication skills and keep a positive outlook, we will find more opportunities.",
           "focus": "decision, university, technology, environment, improve, communication, opportunities, personally, outlook",
-          "audio": "n-pass1-n-e0a0d0a7c3.wav",
-          "audioSlow": "slow-pass1-20-c5ed56e79d.wav"
+          "audio": "sent-d1-passage-0-n-many-senior-two-students-feel-pr-e5cf7cc89a.wav",
+          "audioSlow": "sent-d1-passage-0-s-many-senior-two-students-feel-pr-a01209e3eb.wav"
         },
         {
           "id": "d1-weak",
@@ -875,31 +884,31 @@ window.PRONUNCIATION_DATA = {
           "tipZh": "功能词在连贯说话里常变弱。对比「强调读」与「自然弱读」。",
           "items": [
             {
-              "strong": "I can do it.",
+              "strong": "I CAN do it.",
               "strongIpa": "/kæn/",
               "weak": "I can do it.",
               "weakIpa": "/kən/",
               "note": "can：强调 vs 弱读",
-              "strongAudio": "n-wks1-0-n-279b61b776.wav",
-              "weakAudio": "n-wks1-0-n-279b61b776.wav"
+              "strongAudio": "wk-can-strong-i-can-do-it-abaa593d44.wav",
+              "weakAudio": "wk-can-weak-i-can-do-it-b5992990c6.wav"
             },
             {
-              "strong": "It's for you.",
+              "strong": "It's FOR you.",
               "strongIpa": "/fɔː/",
               "weak": "It's for you.",
               "weakIpa": "/fə/",
               "note": "for：强调 vs 弱读",
-              "strongAudio": "n-wks1-1-n-28f5c68af4.wav",
-              "weakAudio": "n-wks1-1-n-28f5c68af4.wav"
+              "strongAudio": "wk-for-strong-it-s-for-you-019942804b.wav",
+              "weakAudio": "wk-for-weak-it-s-for-you-0059585972.wav"
             },
             {
-              "strong": "Look at them.",
+              "strong": "Look AT them.",
               "strongIpa": "/æt/",
               "weak": "Look at them.",
               "weakIpa": "/ət/",
               "note": "at：强调 vs 弱读",
-              "strongAudio": "n-wks1-2-n-46e48a2914.wav",
-              "weakAudio": "n-wks1-2-n-46e48a2914.wav"
+              "strongAudio": "wk-at-strong-look-at-them-73eaefc5ae.wav",
+              "weakAudio": "wk-at-weak-look-at-them-6df139ec9d.wav"
             }
           ]
         }
@@ -925,7 +934,7 @@ window.PRONUNCIATION_DATA = {
           "type": "sentences",
           "titleZh": "即将开放",
           "titleEn": "Coming soon",
-          "tipZh": "请先完成 Day 1。Day 2–7 音素计划已规划，正式版会一并放出。",
+          "tipZh": "请先完成 Day 1。",
           "items": [
             {
               "en": "Day 2 focuses on: p, b, t, d, k, g.",
@@ -958,7 +967,7 @@ window.PRONUNCIATION_DATA = {
           "type": "sentences",
           "titleZh": "即将开放",
           "titleEn": "Coming soon",
-          "tipZh": "请先完成 Day 1。Day 2–7 音素计划已规划，正式版会一并放出。",
+          "tipZh": "请先完成 Day 1。",
           "items": [
             {
               "en": "Day 3 focuses on: f, v, θ, ð, s, z, ʃ, ʒ, h.",
@@ -987,7 +996,7 @@ window.PRONUNCIATION_DATA = {
           "type": "sentences",
           "titleZh": "即将开放",
           "titleEn": "Coming soon",
-          "tipZh": "请先完成 Day 1。Day 2–7 音素计划已规划，正式版会一并放出。",
+          "tipZh": "请先完成 Day 1。",
           "items": [
             {
               "en": "Day 4 focuses on: tʃ, dʒ, m, n, ŋ.",
@@ -1015,7 +1024,7 @@ window.PRONUNCIATION_DATA = {
           "type": "sentences",
           "titleZh": "即将开放",
           "titleEn": "Coming soon",
-          "tipZh": "请先完成 Day 1。Day 2–7 音素计划已规划，正式版会一并放出。",
+          "tipZh": "请先完成 Day 1。",
           "items": [
             {
               "en": "Day 5 focuses on: l, r, w, j.",
@@ -1044,7 +1053,7 @@ window.PRONUNCIATION_DATA = {
           "type": "sentences",
           "titleZh": "即将开放",
           "titleEn": "Coming soon",
-          "tipZh": "请先完成 Day 1。Day 2–7 音素计划已规划，正式版会一并放出。",
+          "tipZh": "请先完成 Day 1。",
           "items": [
             {
               "en": "Day 6 focuses on: eɪ, aɪ, ɔɪ, aʊ, əʊ.",
@@ -1071,7 +1080,7 @@ window.PRONUNCIATION_DATA = {
           "type": "sentences",
           "titleZh": "即将开放",
           "titleEn": "Coming soon",
-          "tipZh": "请先完成 Day 1。Day 2–7 音素计划已规划，正式版会一并放出。",
+          "tipZh": "请先完成 Day 1。",
           "items": [
             {
               "en": "Day 7 focuses on: ɪə, eə, ʊə.",
