@@ -1,11 +1,11 @@
 window.PRONUNCIATION_DATA = {
   "meta": {
-    "title": "HKDSE 发音听说打卡 · Day 1 测试页",
+    "title": "HKDSE 发音听说打卡 · Day 1–2",
     "level": "B1 / 高二",
     "accent": "British RP (IPA)",
     "voice": "en-GB-SoniaNeural",
-    "dayCount": 1,
-    "phonemeNote": "课堂常用 RP 44 核音素 + 弱读；若教材写 48，多含变体。本计划按 7 日覆盖。",
+    "dayCount": 2,
+    "phonemeNote": "传统48教学项＝20元音＋24基本辅音＋tr/dr/ts/dz四组组合（并非48个独立音位）。已开放 Day1：12个单元音；Day2：6个清浊爆破音与8个传统英式双元音（同一天）。Day3–5 为其余辅音及四组组合，Day6/7 为复习迁移，均尚未开放。面授日待老师定。Day2 示范为英式合成音：已做文件与 WAV 格式检查，尚未逐条人工听审。传统 /ʊə/ 在现代英式可合并为 /ɔː/。",
     "outline": [
       {
         "day": 1,
@@ -14,33 +14,33 @@ window.PRONUNCIATION_DATA = {
       },
       {
         "day": 2,
-        "phones": "p b t d k g",
-        "theme": "爆破音"
+        "phones": "p b t d k ɡ + eɪ aɪ ɔɪ aʊ əʊ ɪə eə ʊə",
+        "theme": "清浊爆破音＋8双元音（同一天）"
       },
       {
         "day": 3,
         "phones": "f v θ ð s z ʃ ʒ h",
-        "theme": "摩擦音"
+        "theme": "摩擦音（尚未开放）"
       },
       {
         "day": 4,
         "phones": "tʃ dʒ m n ŋ",
-        "theme": "破擦音 + 鼻音"
+        "theme": "破擦音 + 鼻音（尚未开放）"
       },
       {
         "day": 5,
-        "phones": "l r w j",
-        "theme": "近音 / 流音"
+        "phones": "l r w j + tr dr ts dz（组合）",
+        "theme": "近音 / 流音（尚未开放）"
       },
       {
         "day": 6,
-        "phones": "eɪ aɪ ɔɪ aʊ əʊ",
-        "theme": "合口双元音"
+        "phones": "复习 eɪ aɪ ɔɪ aʊ əʊ",
+        "theme": "复习迁移，不是首次介绍（尚未开放）"
       },
       {
         "day": 7,
-        "phones": "ɪə eə ʊə + 弱读复习",
-        "theme": "集中双元音 + 总复习"
+        "phones": "复习 ɪə eə ʊə + 全周综合",
+        "theme": "集中双元音复习与综合录音（尚未开放）"
       }
     ]
   },
@@ -916,31 +916,308 @@ window.PRONUNCIATION_DATA = {
     },
     {
       "id": 2,
-      "title": "Day 2 · 爆破音（即将开放）",
-      "titleEn": "Plosives p b t d k g (coming soon)",
-      "focusZh": "本测试页仅开放 Day 1。完整 7 日内容稍后开放。",
+      "title": "Day 2 · 清浊爆破音＋8个双元音",
+      "titleEn": "Plosives and all eight traditional British diphthongs",
+      "status": "full",
       "phonemes": [
         "p",
         "b",
         "t",
         "d",
         "k",
-        "g"
+        "ɡ",
+        "eɪ",
+        "aɪ",
+        "ɔɪ",
+        "aʊ",
+        "əʊ",
+        "ɪə",
+        "eə",
+        "ʊə"
       ],
-      "status": "locked",
+      "focusZh": "同一天介绍 /p b t d k ɡ/ 与8个传统英式双元音；核心15–20分钟，拓展自选。不考词性。面授日待老师定。",
+      "noteZh": "基础词只用于辨音，主练词以B1常见学校/生活/职业语境为主，未逐词EVP认证。清音/p t k/在重读音节首通常有送气，/s/后常不送气；浊音/b d ɡ/不能只靠嗓音响不响判断。弱读取决于语境和强调，不是重音在后就自动变短。传统/ʊə/在现代英式可读/ɔː/，tourist等示范可能采用变体，不判为错误。示范尚未逐条人工听审。",
       "sections": [
         {
-          "id": "d2-locked",
-          "type": "sentences",
-          "titleZh": "即将开放",
-          "titleEn": "Coming soon",
-          "tipZh": "请先完成 Day 1。",
+          "id": "d2-merged-words",
+          "type": "vowels",
+          "titleZh": "① 核心：8词覆盖8个双元音（5–6分钟）",
+          "titleEn": "Eight diphthongs in context",
+          "tipZh": "先听常速，观察IPA与音节点，再跟读一次；蓝色只标目标音，不表示双元音是长单元音。兼听词中爆破音。",
+          "color": "long",
           "items": [
             {
-              "en": "Day 2 focuses on: p, b, t, d, k, g.",
-              "focus": "outline only"
+              "word": "debate",
+              "ipa": "/dɪˈbeɪt/",
+              "syl": [
+                "de",
+                "bate"
+              ],
+              "stress": 1,
+              "target": "eɪ",
+              "gloss": "辩论；顺带听辅音 /b / t / d/",
+              "audio": "n-debate-n-e8f9fc6f47.wav",
+              "audioSlow": "slow-debate-25-a6e8365aa9.wav"
+            },
+            {
+              "word": "decide",
+              "ipa": "/dɪˈsaɪd/",
+              "syl": [
+                "de",
+                "cide"
+              ],
+              "stress": 1,
+              "target": "aɪ",
+              "gloss": "决定；顺带听辅音 /d/",
+              "audio": "n-decide-n-8391686a48.wav",
+              "audioSlow": "slow-decide-25-703c77cf18.wav"
+            },
+            {
+              "word": "choice",
+              "ipa": "/tʃɔɪs/",
+              "syl": [
+                "choice"
+              ],
+              "stress": 0,
+              "target": "ɔɪ",
+              "gloss": "选择；注意双元音滑动",
+              "audio": "n-choice-n-67a3256bb1.wav",
+              "audioSlow": "slow-choice-25-ef892d81c1.wav"
+            },
+            {
+              "word": "about",
+              "ipa": "/əˈbaʊt/",
+              "syl": [
+                "a",
+                "bout"
+              ],
+              "stress": 1,
+              "target": "aʊ",
+              "gloss": "关于；顺带听辅音 /b / t/",
+              "audio": "n-about-n-8e4186ae47.wav",
+              "audioSlow": "slow-about-25-3c10cf0fdf.wav"
+            },
+            {
+              "word": "global",
+              "ipa": "/ˈɡləʊbl/",
+              "syl": [
+                "glo",
+                "bal"
+              ],
+              "stress": 0,
+              "target": "əʊ",
+              "gloss": "全球的；顺带听辅音 /ɡ / b/",
+              "audio": "n-global-n-ab262a0331.wav",
+              "audioSlow": "slow-global-25-4eee740380.wav"
+            },
+            {
+              "word": "career",
+              "ipa": "/kəˈrɪə/",
+              "syl": [
+                "ca",
+                "reer"
+              ],
+              "stress": 1,
+              "target": "ɪə",
+              "gloss": "职业；顺带听辅音 /k/",
+              "audio": "n-career-n-37528c224b.wav",
+              "audioSlow": "slow-career-25-04185a3469.wav"
+            },
+            {
+              "word": "prepare",
+              "ipa": "/prɪˈpeə/",
+              "syl": [
+                "pre",
+                "pare"
+              ],
+              "stress": 1,
+              "target": "eə",
+              "gloss": "准备；顺带听辅音 /p/",
+              "audio": "n-prepare-n-a7a3aa5d2b.wav",
+              "audioSlow": "slow-prepare-25-4587ca214a.wav"
+            },
+            {
+              "word": "tourist",
+              "ipa": "/ˈtʊərɪst/",
+              "syl": [
+                "tour",
+                "ist"
+              ],
+              "stress": 0,
+              "target": "ʊə",
+              "gloss": "游客；顺带听辅音 /t/",
+              "audio": "n-tourist-n-64662e6f18.wav",
+              "audioSlow": "slow-tourist-25-25970ebd52.wav"
             }
           ]
+        },
+        {
+          "id": "d2-merged-pairs",
+          "type": "minimal_pairs",
+          "titleZh": "② 核心：4组辨音（3–4分钟）",
+          "titleEn": "Plosive and vowel contrasts",
+          "tipZh": "cap/cab：/p b/；write/ride：/t d/；back/bag：/k ɡ/；late/let：/eɪ e/。基础词仅作辨音，不作为B1新词。每组听A/B，跟读一遍；可任选一组录音。",
+          "pairs": [
+            {
+              "a": {
+                "word": "cap",
+                "ipa": "/kæp/",
+                "target": "p",
+                "audio": "n-pa-cap-n-687e701944.wav",
+                "audioSlow": "slow-pa-cap-25-5788c6bb56.wav"
+              },
+              "b": {
+                "word": "cab",
+                "ipa": "/kæb/",
+                "target": "b",
+                "audio": "n-pb-cab-n-25b2dd4eb2.wav",
+                "audioSlow": "slow-pb-cab-25-91a7658610.wav"
+              },
+              "note": "/p/ vs /b/"
+            },
+            {
+              "a": {
+                "word": "write",
+                "ipa": "/raɪt/",
+                "target": "t",
+                "audio": "n-pa-write-n-50090dc078.wav",
+                "audioSlow": "slow-pa-write-25-9466172bc2.wav"
+              },
+              "b": {
+                "word": "ride",
+                "ipa": "/raɪd/",
+                "target": "d",
+                "audio": "n-pb-ride-n-71ce9a1056.wav",
+                "audioSlow": "slow-pb-ride-25-9aaa44b7e2.wav"
+              },
+              "note": "/t/ vs /d/"
+            },
+            {
+              "a": {
+                "word": "back",
+                "ipa": "/bæk/",
+                "target": "k",
+                "audio": "n-pa-back-n-1814e949bc.wav",
+                "audioSlow": "slow-pa-back-25-de638561b1.wav"
+              },
+              "b": {
+                "word": "bag",
+                "ipa": "/bæɡ/",
+                "target": "g",
+                "audio": "n-pb-bag-n-fc4bfee18d.wav",
+                "audioSlow": "slow-pb-bag-25-23dd988822.wav"
+              },
+              "note": "/k/ vs /g/"
+            },
+            {
+              "a": {
+                "word": "late",
+                "ipa": "/leɪt/",
+                "target": "eɪ",
+                "audio": "n-pa-late-n-4364710978.wav",
+                "audioSlow": "slow-pa-late-25-82be34ac37.wav"
+              },
+              "b": {
+                "word": "let",
+                "ipa": "/let/",
+                "target": "e",
+                "audio": "n-pb-let-n-bf04889f08.wav",
+                "audioSlow": "slow-pb-let-25-c94a1c3cd7.wav"
+              },
+              "note": "/eɪ/ vs /e/"
+            }
+          ]
+        },
+        {
+          "id": "d2-merged-sentences",
+          "type": "sentences",
+          "titleZh": "③ 核心：3句听说＋录音对比（6–8分钟）",
+          "titleEn": "Listen, record, compare",
+          "tipZh": "每句听一次再录一次；回听自己的WAV与示范音，检查爆破音、双元音及意群。实义词可突出，虚词是否弱读依语境而定；不承诺固定强弱音值。",
+          "items": [
+            {
+              "en": "We will debate the choice of a global career.",
+              "focus": "debate /eɪ/，choice /ɔɪ/，global /əʊ/，career /ɪə/；/b d t k ɡ/",
+              "audio": "day2merge-4ff6dd693d05c0a0.wav",
+              "audioSlow": "day2merge-419601ffb3a49b90.wav"
+            },
+            {
+              "en": "Decide about the trip and prepare your ideas.",
+              "focus": "decide /aɪ/，about /aʊ/，prepare /eə/；/d t p/",
+              "audio": "day2merge-ccbd7c3e19842028.wav",
+              "audioSlow": "day2merge-2cd0c0d6c1fb880d.wav"
+            },
+            {
+              "en": "The tourist asked about local transport.",
+              "focus": "tourist /ʊə/（可/ɔː/），about /aʊ/，local /əʊ/；/t k p/",
+              "audio": "day2merge-d5347cf298317e58.wav",
+              "audioSlow": "day2merge-8e214851e3d7db04.wav"
+            }
+          ]
+        },
+        {
+          "id": "d2-optional-stress",
+          "type": "stress_tap",
+          "titleZh": "④ 选做：点重音＋4音节迁移（2–3分钟）",
+          "titleEn": "Optional stress transfer",
+          "tipZh": "先听，再点主重音；不考词性。technology是辅音迁移词，不是新增双元音。",
+          "items": [
+            {
+              "word": "prepare",
+              "ipa": "/prɪˈpeə/",
+              "syl": [
+                "pre",
+                "pare"
+              ],
+              "stress": 1,
+              "target": "eə",
+              "gloss": "准备；顺带听辅音 /p/",
+              "audio": "n-prepare-n-a7a3aa5d2b.wav",
+              "audioSlow": "slow-prepare-25-4587ca214a.wav"
+            },
+            {
+              "word": "global",
+              "ipa": "/ˈɡləʊbl/",
+              "syl": [
+                "glo",
+                "bal"
+              ],
+              "stress": 0,
+              "target": "əʊ",
+              "gloss": "全球的；顺带听辅音 /ɡ / b/",
+              "audio": "n-global-n-ab262a0331.wav",
+              "audioSlow": "slow-global-25-4eee740380.wav"
+            },
+            {
+              "word": "technology",
+              "ipa": "/tekˈnɒlədʒi/",
+              "syl": [
+                "tech",
+                "nol",
+                "o",
+                "gy"
+              ],
+              "stress": 1,
+              "target": "t",
+              "gloss": "科技",
+              "ex": "Technology changes how teenagers study.",
+              "audio": "n-technology-n-9e3194f972.wav",
+              "audioSlow": "slow-technology-25-7ea61834cf.wav",
+              "exAudio": "n-ex-technology-n-95e7c2c867.wav"
+            }
+          ]
+        },
+        {
+          "id": "d2-optional-passage",
+          "type": "passage",
+          "titleZh": "⑤ 选做：情境朗读（3分钟）",
+          "titleEn": "Optional transfer passage",
+          "tipZh": "整段听读一次，录WAV并回听。不作自动发音评分。",
+          "titlePassage": "Planning a school trip",
+          "text": "Our group will debate the choice of a school trip. We need to decide about transport and prepare a clear plan. A tourist can share ideas about local places. Everyone has a chance to speak.",
+          "focus": "debate, choice, decide, about, prepare, tourist, local",
+          "audio": "day2merge-4cf2a00b6195535c.wav",
+          "audioSlow": "day2merge-91b22727c6acf865.wav"
         }
       ]
     },
@@ -948,7 +1225,7 @@ window.PRONUNCIATION_DATA = {
       "id": 3,
       "title": "Day 3 · 摩擦音（即将开放）",
       "titleEn": "Fricatives f v θ ð s z ʃ ʒ h (coming soon)",
-      "focusZh": "本测试页仅开放 Day 1。完整 7 日内容稍后开放。",
+      "focusZh": "Day 1–2 已开放。本天完整任务尚未开放。",
       "phonemes": [
         "f",
         "v",
@@ -967,7 +1244,7 @@ window.PRONUNCIATION_DATA = {
           "type": "sentences",
           "titleZh": "即将开放",
           "titleEn": "Coming soon",
-          "tipZh": "请先完成 Day 1。",
+          "tipZh": "完整任务尚未开放，请先练习 Day 1 与 Day 2。",
           "items": [
             {
               "en": "Day 3 focuses on: f, v, θ, ð, s, z, ʃ, ʒ, h.",
@@ -981,7 +1258,7 @@ window.PRONUNCIATION_DATA = {
       "id": 4,
       "title": "Day 4 · 破擦音 + 鼻音（即将开放）",
       "titleEn": "Affricates & nasals tʃ dʒ m n ŋ (coming soon)",
-      "focusZh": "本测试页仅开放 Day 1。完整 7 日内容稍后开放。",
+      "focusZh": "Day 1–2 已开放。本天完整任务尚未开放。",
       "phonemes": [
         "tʃ",
         "dʒ",
@@ -996,7 +1273,7 @@ window.PRONUNCIATION_DATA = {
           "type": "sentences",
           "titleZh": "即将开放",
           "titleEn": "Coming soon",
-          "tipZh": "请先完成 Day 1。",
+          "tipZh": "完整任务尚未开放，请先练习 Day 1 与 Day 2。",
           "items": [
             {
               "en": "Day 4 focuses on: tʃ, dʒ, m, n, ŋ.",
@@ -1010,7 +1287,7 @@ window.PRONUNCIATION_DATA = {
       "id": 5,
       "title": "Day 5 · 近音 / 流音（即将开放）",
       "titleEn": "Approximants l r w j (coming soon)",
-      "focusZh": "本测试页仅开放 Day 1。完整 7 日内容稍后开放。",
+      "focusZh": "Day 1–2 已开放。本天完整任务尚未开放。",
       "phonemes": [
         "l",
         "r",
@@ -1024,7 +1301,7 @@ window.PRONUNCIATION_DATA = {
           "type": "sentences",
           "titleZh": "即将开放",
           "titleEn": "Coming soon",
-          "tipZh": "请先完成 Day 1。",
+          "tipZh": "完整任务尚未开放，请先练习 Day 1 与 Day 2。",
           "items": [
             {
               "en": "Day 5 focuses on: l, r, w, j.",
@@ -1036,9 +1313,9 @@ window.PRONUNCIATION_DATA = {
     },
     {
       "id": 6,
-      "title": "Day 6 · 合口双元音（即将开放）",
-      "titleEn": "Closing diphthongs eɪ aɪ ɔɪ aʊ əʊ (coming soon)",
-      "focusZh": "本测试页仅开放 Day 1。完整 7 日内容稍后开放。",
+      "title": "Day 6 · 双元音复习与情境迁移（即将开放）",
+      "titleEn": "Diphthong review and transfer (coming soon)",
+      "focusZh": "复习 Day 2 已介绍的合口双元音，作情境迁移；不是首次介绍。完整任务尚未开放。",
       "phonemes": [
         "eɪ",
         "aɪ",
@@ -1053,11 +1330,11 @@ window.PRONUNCIATION_DATA = {
           "type": "sentences",
           "titleZh": "即将开放",
           "titleEn": "Coming soon",
-          "tipZh": "请先完成 Day 1。",
+          "tipZh": "完整任务尚未开放，请先练习 Day 1 与 Day 2。",
           "items": [
             {
-              "en": "Day 6 focuses on: eɪ, aɪ, ɔɪ, aʊ, əʊ.",
-              "focus": "outline only"
+              "en": "Day 6 reviews closing diphthongs already introduced on Day 2. Full tasks are not open yet.",
+              "focus": "outline only · review transfer"
             }
           ]
         }
@@ -1065,9 +1342,9 @@ window.PRONUNCIATION_DATA = {
     },
     {
       "id": 7,
-      "title": "Day 7 · 集中双元音 + 总复习（即将开放）",
-      "titleEn": "Centring diphthongs ɪə eə ʊə + review (coming soon)",
-      "focusZh": "本测试页仅开放 Day 1。完整 7 日内容稍后开放。",
+      "title": "Day 7 · 集中双元音复习＋七日综合（即将开放）",
+      "titleEn": "Centring diphthong review and integrated practice (coming soon)",
+      "focusZh": "复习 Day 2 已介绍的 /ɪə eə ʊə/，并做综合迁移；不是首次介绍。完整任务尚未开放。/ʊə/ 现代英式可合并为 /ɔː/。",
       "phonemes": [
         "ɪə",
         "eə",
@@ -1080,11 +1357,11 @@ window.PRONUNCIATION_DATA = {
           "type": "sentences",
           "titleZh": "即将开放",
           "titleEn": "Coming soon",
-          "tipZh": "请先完成 Day 1。",
+          "tipZh": "完整任务尚未开放，请先练习 Day 1 与 Day 2。",
           "items": [
             {
-              "en": "Day 7 focuses on: ɪə, eə, ʊə.",
-              "focus": "outline only"
+              "en": "Day 7 reviews centring diphthongs already introduced on Day 2. Full tasks are not open yet.",
+              "focus": "outline only · review transfer"
             }
           ]
         }
