@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "HKDSE 发音听说打卡 · Day 1–2",
+    "title": "HKDSE 发音听说打卡 · Day 1–7",
     "level": "B1 / 高二",
     "accent": "British RP (IPA)",
     "voice": "en-GB-SoniaNeural",
-    "dayCount": 2,
-    "phonemeNote": "传统48教学项＝20元音＋24基本辅音＋tr/dr/ts/dz四组组合（并非48个独立音位）。已开放 Day1：12个单元音；Day2：6个清浊爆破音与8个传统英式双元音（同一天）。Day3–5 为其余辅音及四组组合，Day6/7 为复习迁移，均尚未开放。面授日待老师定。Day2 示范为英式合成音：已做文件与 WAV 格式检查，尚未逐条人工听审。传统 /ʊə/ 在现代英式可合并为 /ɔː/。",
+    "dayCount": 7,
+    "phonemeNote": "传统48教学项＝20元音＋24基本辅音＋tr/dr/ts/dz四组组合（并非48个独立音位）。Day1：12单元音；Day2：6爆破音与8双元音；Day3：9摩擦音；Day4：破擦+鼻音；Day5：近音/流音+四组组合；Day6/7：复习迁移。面授日待老师定。",
     "outline": [
       {
         "day": 1,
@@ -20,27 +20,27 @@
       {
         "day": 3,
         "phones": "f v θ ð s z ʃ ʒ h",
-        "theme": "摩擦音（尚未开放）"
+        "theme": "摩擦音（Day2结构）"
       },
       {
         "day": 4,
         "phones": "tʃ dʒ m n ŋ",
-        "theme": "破擦音 + 鼻音（尚未开放）"
+        "theme": "破擦音 + 鼻音（Day2结构）"
       },
       {
         "day": 5,
         "phones": "l r w j + tr dr ts dz（组合）",
-        "theme": "近音 / 流音（尚未开放）"
+        "theme": "近音/流音＋四组组合"
       },
       {
         "day": 6,
         "phones": "复习 eɪ aɪ ɔɪ aʊ əʊ",
-        "theme": "复习迁移，不是首次介绍（尚未开放）"
+        "theme": "复习迁移，不是首次介绍"
       },
       {
         "day": 7,
         "phones": "复习 ɪə eə ʊə + 全周综合",
-        "theme": "集中双元音复习与综合录音（尚未开放）"
+        "theme": "集中双元音复习与综合录音"
       }
     ]
   },
@@ -1223,9 +1223,9 @@
     },
     {
       "id": 3,
-      "title": "Day 3 · 摩擦音（即将开放）",
-      "titleEn": "Fricatives f v θ ð s z ʃ ʒ h (coming soon)",
-      "focusZh": "Day 1–2 已开放。本天完整任务尚未开放。",
+      "title": "Day 3 · 摩擦音",
+      "titleEn": "Fricatives",
+      "status": "review",
       "phonemes": [
         "f",
         "v",
@@ -1237,28 +1237,297 @@
         "ʒ",
         "h"
       ],
-      "status": "locked",
+      "focusZh": "同一天练 /f v θ ð s z ʃ ʒ h/。核心约15–20分钟。特别注意 /θ ð/ 与 /ʃ ʒ/，以及词尾 /s z/。不考词性。",
+      "noteZh": "传统48教学项＝20元音＋24基本辅音＋tr/dr/ts/dz四组组合（并非48个独立音位）。核心15–20分钟；选做另计。纯听说，不考词性。面授日待老师定。示范音为 en-GB-SoniaNeural 神经合成，未逐条人工听审。弱读取决于语境与强调，不是重音靠后前元音就自动变短。 /h/ 放在句子与选做中覆盖。think/they 等基础词仅用于辨音。",
       "sections": [
         {
-          "id": "d3-locked",
-          "type": "sentences",
-          "titleZh": "即将开放",
-          "titleEn": "Coming soon",
-          "tipZh": "完整任务尚未开放，请先练习 Day 1 与 Day 2。",
+          "id": "d3-core-words",
+          "type": "vowels",
+          "titleZh": "① 核心：8词听读（5–6分钟）",
+          "titleEn": "Eight fricative words",
+          "tipZh": "先听常速，看IPA与音节点，再跟读。绿色只标当日目标摩擦音。",
+          "color": "short",
           "items": [
             {
-              "en": "Day 3 focuses on: f, v, θ, ð, s, z, ʃ, ʒ, h.",
-              "focus": "outline only"
+              "word": "future",
+              "ipa": "/ˈfjuːtʃə/",
+              "syl": [
+                "fu",
+                "ture"
+              ],
+              "stress": 0,
+              "target": "f",
+              "gloss": "未来",
+              "audio": "d37-65e43083b180826f.wav",
+              "audioSlow": "d37-2134c32addc9bbc7.wav"
+            },
+            {
+              "word": "environment",
+              "ipa": "/ɪnˈvaɪrənmənt/",
+              "syl": [
+                "en",
+                "vi",
+                "ron",
+                "ment"
+              ],
+              "stress": 1,
+              "target": "v",
+              "gloss": "环境",
+              "audio": "d37-981fc4b6d9784ab4.wav",
+              "audioSlow": "d37-e3c1510793a63f46.wav"
+            },
+            {
+              "word": "something",
+              "ipa": "/ˈsʌmθɪŋ/",
+              "syl": [
+                "some",
+                "thing"
+              ],
+              "stress": 0,
+              "target": "θ",
+              "gloss": "某事",
+              "audio": "d37-24e6d2853bf18ab1.wav",
+              "audioSlow": "d37-783e50f82b3909f3.wav"
+            },
+            {
+              "word": "further",
+              "ipa": "/ˈfɜːðə/",
+              "syl": [
+                "fur",
+                "ther"
+              ],
+              "stress": 0,
+              "target": "ð",
+              "gloss": "进一步",
+              "audio": "d37-83386f811cfd8c3e.wav",
+              "audioSlow": "d37-41e5ab89803e7f16.wav"
+            },
+            {
+              "word": "success",
+              "ipa": "/səkˈses/",
+              "syl": [
+                "suc",
+                "cess"
+              ],
+              "stress": 1,
+              "target": "s",
+              "gloss": "成功",
+              "audio": "d37-83e74c06b79aab48.wav",
+              "audioSlow": "d37-ef8ac6906cf5c577.wav"
+            },
+            {
+              "word": "result",
+              "ipa": "/rɪˈzʌlt/",
+              "syl": [
+                "re",
+                "sult"
+              ],
+              "stress": 1,
+              "target": "z",
+              "gloss": "结果",
+              "audio": "d37-362b97e69a1001bc.wav",
+              "audioSlow": "d37-f1624a555e953dc5.wav"
+            },
+            {
+              "word": "social",
+              "ipa": "/ˈsəʊʃl/",
+              "syl": [
+                "so",
+                "cial"
+              ],
+              "stress": 0,
+              "target": "ʃ",
+              "gloss": "社交的",
+              "audio": "d37-4153cf2e739058bc.wav",
+              "audioSlow": "d37-37db3c67a076d8a0.wav"
+            },
+            {
+              "word": "decision",
+              "ipa": "/dɪˈsɪʒn/",
+              "syl": [
+                "de",
+                "ci",
+                "sion"
+              ],
+              "stress": 1,
+              "target": "ʒ",
+              "gloss": "决定",
+              "audio": "d37-5e495e9986d51957.wav",
+              "audioSlow": "d37-8493d5424dbf96ed.wav"
             }
           ]
+        },
+        {
+          "id": "d3-core-pairs",
+          "type": "minimal_pairs",
+          "titleZh": "② 核心：4组辨音（3–4分钟）",
+          "titleEn": "Fricative contrasts",
+          "tipZh": "基础词仅作辨音。think/sink：/θ s/；they/day：/ð d/；ship/sip：/ʃ s/；fan/van：/f v/。",
+          "pairs": [
+            {
+              "a": {
+                "word": "think",
+                "ipa": "/θɪŋk/",
+                "target": "θ",
+                "audio": "d37-5c582e6a1ad3b644.wav",
+                "audioSlow": "d37-a50b85c60e922c54.wav"
+              },
+              "b": {
+                "word": "sink",
+                "ipa": "/sɪŋk/",
+                "target": "s",
+                "audio": "d37-45191a33541f84e6.wav",
+                "audioSlow": "d37-10041f579ab032e0.wav"
+              },
+              "note": "/θ/ vs /s/"
+            },
+            {
+              "a": {
+                "word": "they",
+                "ipa": "/ðeɪ/",
+                "target": "ð",
+                "audio": "d37-e78fa13778bd40de.wav",
+                "audioSlow": "d37-c5839b84eec5d35c.wav"
+              },
+              "b": {
+                "word": "day",
+                "ipa": "/deɪ/",
+                "target": "d",
+                "audio": "d37-526510c309dd5061.wav",
+                "audioSlow": "d37-75504d33f700f9e8.wav"
+              },
+              "note": "/ð/ vs /d/"
+            },
+            {
+              "a": {
+                "word": "ship",
+                "ipa": "/ʃɪp/",
+                "target": "ʃ",
+                "audio": "d37-24ea007e138cc171.wav",
+                "audioSlow": "d37-9b16b9528289daee.wav"
+              },
+              "b": {
+                "word": "sip",
+                "ipa": "/sɪp/",
+                "target": "s",
+                "audio": "d37-473bb628fd6ca354.wav",
+                "audioSlow": "d37-3a7545d834390e44.wav"
+              },
+              "note": "/ʃ/ vs /s/"
+            },
+            {
+              "a": {
+                "word": "fan",
+                "ipa": "/fæn/",
+                "target": "f",
+                "audio": "d37-c718b6354c2e8cb1.wav",
+                "audioSlow": "d37-c233cef4c92abd6d.wav"
+              },
+              "b": {
+                "word": "van",
+                "ipa": "/væn/",
+                "target": "v",
+                "audio": "d37-565392e5285b7ac1.wav",
+                "audioSlow": "d37-01940b39e3917f2a.wav"
+              },
+              "note": "/f/ vs /v/"
+            }
+          ]
+        },
+        {
+          "id": "d3-core-sentences",
+          "type": "sentences",
+          "titleZh": "③ 核心：3句听说＋录音对比（6–8分钟）",
+          "titleEn": "Listen, record, compare",
+          "tipZh": "每句听一次、录一次，回听WAV并与示范对比。注意 /θ ð ʃ ʒ h/ 与意群；虚词弱读依语境，不保证固定音值。",
+          "items": [
+            {
+              "en": "I think further research will show the real effect.",
+              "focus": "think /θ/；further /ð/；research；effect /f/",
+              "audio": "d37-09cf33e33dce926c.wav",
+              "audioSlow": "d37-5cbcf71aa9d4ece1.wav"
+            },
+            {
+              "en": "Social media usually shapes teenage behaviour.",
+              "focus": "social /ʃ/；usually /ʒ/；behaviour /h/",
+              "audio": "d37-eea890a6d550676e.wav",
+              "audioSlow": "d37-ed8581d6380c5525.wav"
+            },
+            {
+              "en": "Travel and information help us understand the environment.",
+              "focus": "travel /v/；information /ʃ/；environment /v/",
+              "audio": "d37-13b2a7c72caa9fa1.wav",
+              "audioSlow": "d37-ad52e40e0663a727.wav"
+            }
+          ]
+        },
+        {
+          "id": "d3-optional-stress",
+          "type": "stress_tap",
+          "titleZh": "④ 选做：点重音（2–3分钟）",
+          "titleEn": "Optional stress",
+          "tipZh": "先听再点主重音。healthy 覆盖 /h/ 与 /θ/。",
+          "items": [
+            {
+              "word": "information",
+              "ipa": "/ˌɪnfəˈmeɪʃn/",
+              "syl": [
+                "in",
+                "for",
+                "ma",
+                "tion"
+              ],
+              "stress": 2,
+              "gloss": "信息",
+              "audio": "d37-8e72f90339f96df6.wav",
+              "audioSlow": "d37-73400391c004595d.wav"
+            },
+            {
+              "word": "decision",
+              "ipa": "/dɪˈsɪʒn/",
+              "syl": [
+                "de",
+                "ci",
+                "sion"
+              ],
+              "stress": 1,
+              "gloss": "决定",
+              "audio": "d37-5e495e9986d51957.wav",
+              "audioSlow": "d37-8493d5424dbf96ed.wav"
+            },
+            {
+              "word": "healthy",
+              "ipa": "/ˈhelθi/",
+              "syl": [
+                "heal",
+                "thy"
+              ],
+              "stress": 0,
+              "gloss": "健康的",
+              "audio": "d37-59b66ff6fa5aa17d.wav",
+              "audioSlow": "d37-c11c91a3a9638d61.wav"
+            }
+          ]
+        },
+        {
+          "id": "d3-optional-passage",
+          "type": "passage",
+          "titleZh": "⑤ 选做：情境朗读（3分钟）",
+          "titleEn": "Optional passage",
+          "tipZh": "整段听读一次并录音回听。不作自动评分。",
+          "titlePassage": "Healthy online habits",
+          "text": "Teenagers usually spend hours on social media. This can have a real effect on sleep and behaviour. I think we should search for better information and share things carefully. Further discussion at school can help students make wiser decisions.",
+          "focus": "usually, social, effect, behaviour, think, information, further, decisions",
+          "audio": "d37-a9d9293dbf898f26.wav",
+          "audioSlow": "d37-d9fee72b8be63e75.wav"
         }
       ]
     },
     {
       "id": 4,
-      "title": "Day 4 · 破擦音 + 鼻音（即将开放）",
-      "titleEn": "Affricates & nasals tʃ dʒ m n ŋ (coming soon)",
-      "focusZh": "Day 1–2 已开放。本天完整任务尚未开放。",
+      "title": "Day 4 · 破擦音 + 鼻音",
+      "titleEn": "Affricates and nasals",
+      "status": "review",
       "phonemes": [
         "tʃ",
         "dʒ",
@@ -1266,56 +1535,612 @@
         "n",
         "ŋ"
       ],
-      "status": "locked",
+      "focusZh": "同一天练 /tʃ dʒ m n ŋ/。重点听 /n/–/ŋ/ 与词尾 -ing。核心约15–20分钟。不考词性。",
+      "noteZh": "传统48教学项＝20元音＋24基本辅音＋tr/dr/ts/dz四组组合（并非48个独立音位）。核心15–20分钟；选做另计。纯听说，不考词性。面授日待老师定。示范音为 en-GB-SoniaNeural 神经合成，未逐条人工听审。弱读取决于语境与强调，不是重音靠后前元音就自动变短。 challenge/manager 等多音节B1词；thin/thing 等基础词仅辨音。",
       "sections": [
         {
-          "id": "d4-locked",
-          "type": "sentences",
-          "titleZh": "即将开放",
-          "titleEn": "Coming soon",
-          "tipZh": "完整任务尚未开放，请先练习 Day 1 与 Day 2。",
+          "id": "d4-core-words",
+          "type": "vowels",
+          "titleZh": "① 核心：8词听读（5–6分钟）",
+          "titleEn": "Eight target words",
+          "tipZh": "绿色标目标破擦/鼻音。/ŋ/ 只用舌后，词尾不要硬加 /ɡ/。",
+          "color": "long",
           "items": [
             {
-              "en": "Day 4 focuses on: tʃ, dʒ, m, n, ŋ.",
-              "focus": "outline only"
+              "word": "challenge",
+              "ipa": "/ˈtʃælɪndʒ/",
+              "syl": [
+                "chal",
+                "lenge"
+              ],
+              "stress": 0,
+              "target": "tʃ",
+              "gloss": "挑战",
+              "audio": "d37-d8c310de3f27c276.wav",
+              "audioSlow": "d37-38765f858cb1905b.wav"
+            },
+            {
+              "word": "future",
+              "ipa": "/ˈfjuːtʃə/",
+              "syl": [
+                "fu",
+                "ture"
+              ],
+              "stress": 0,
+              "target": "tʃ",
+              "gloss": "未来",
+              "audio": "d37-65e43083b180826f.wav",
+              "audioSlow": "d37-2134c32addc9bbc7.wav"
+            },
+            {
+              "word": "education",
+              "ipa": "/ˌedʒuˈkeɪʃn/",
+              "syl": [
+                "ed",
+                "u",
+                "ca",
+                "tion"
+              ],
+              "stress": 2,
+              "target": "dʒ",
+              "gloss": "教育",
+              "audio": "d37-43671e7ce3c28fe1.wav",
+              "audioSlow": "d37-c977ac7bba46f13e.wav"
+            },
+            {
+              "word": "manager",
+              "ipa": "/ˈmænɪdʒə/",
+              "syl": [
+                "man",
+                "a",
+                "ger"
+              ],
+              "stress": 0,
+              "target": "dʒ",
+              "gloss": "经理",
+              "audio": "d37-2fdc3c6f4609a3b9.wav",
+              "audioSlow": "d37-d22dc58511f1e21a.wav"
+            },
+            {
+              "word": "community",
+              "ipa": "/kəˈmjuːnəti/",
+              "syl": [
+                "com",
+                "mu",
+                "ni",
+                "ty"
+              ],
+              "stress": 1,
+              "target": "m",
+              "gloss": "社区",
+              "audio": "d37-b398aad9f4cfab9c.wav",
+              "audioSlow": "d37-f0f117c55ce6976d.wav"
+            },
+            {
+              "word": "knowledge",
+              "ipa": "/ˈnɒlɪdʒ/",
+              "syl": [
+                "know",
+                "ledge"
+              ],
+              "stress": 0,
+              "target": "n",
+              "gloss": "知识",
+              "audio": "d37-6a1d9c9da8237c88.wav",
+              "audioSlow": "d37-00de34c0cebb5025.wav"
+            },
+            {
+              "word": "thinking",
+              "ipa": "/ˈθɪŋkɪŋ/",
+              "syl": [
+                "think",
+                "ing"
+              ],
+              "stress": 0,
+              "target": "ŋ",
+              "gloss": "思考",
+              "audio": "d37-d163491101a27314.wav",
+              "audioSlow": "d37-be3e01d38e0fcdc7.wav"
+            },
+            {
+              "word": "language",
+              "ipa": "/ˈlæŋɡwɪdʒ/",
+              "syl": [
+                "lan",
+                "guage"
+              ],
+              "stress": 0,
+              "target": "ŋ",
+              "gloss": "语言",
+              "audio": "d37-ce5c58b8a634544f.wav",
+              "audioSlow": "d37-d0955e875be9470c.wav"
             }
           ]
+        },
+        {
+          "id": "d4-core-pairs",
+          "type": "minimal_pairs",
+          "titleZh": "② 核心：4组辨音（3–4分钟）",
+          "titleEn": "n/ŋ and affricate contrasts",
+          "tipZh": "thin/thing、win/wing：/n ŋ/；cheap/jeep：/tʃ dʒ/；batch/badge：词尾清浊。基础词仅辨音。",
+          "pairs": [
+            {
+              "a": {
+                "word": "thin",
+                "ipa": "/θɪn/",
+                "target": "n",
+                "audio": "d37-520060c57e7e77d6.wav",
+                "audioSlow": "d37-8c9e2ebd394b7d94.wav"
+              },
+              "b": {
+                "word": "thing",
+                "ipa": "/θɪŋ/",
+                "target": "ŋ",
+                "audio": "d37-ca5782744e89f829.wav",
+                "audioSlow": "d37-549049150c0940ad.wav"
+              },
+              "note": "/n/ vs /ŋ/"
+            },
+            {
+              "a": {
+                "word": "win",
+                "ipa": "/wɪn/",
+                "target": "n",
+                "audio": "d37-1605b5481794f804.wav",
+                "audioSlow": "d37-567d8f77abf9d8ff.wav"
+              },
+              "b": {
+                "word": "wing",
+                "ipa": "/wɪŋ/",
+                "target": "ŋ",
+                "audio": "d37-bcc4a372aaa9e2eb.wav",
+                "audioSlow": "d37-34054134e8679161.wav"
+              },
+              "note": "/n/ vs /ŋ/"
+            },
+            {
+              "a": {
+                "word": "cheap",
+                "ipa": "/tʃiːp/",
+                "target": "tʃ",
+                "audio": "d37-fea0618813e1180e.wav",
+                "audioSlow": "d37-af5dbc66f20c1bb2.wav"
+              },
+              "b": {
+                "word": "jeep",
+                "ipa": "/dʒiːp/",
+                "target": "dʒ",
+                "audio": "d37-c0c66e96aaa04b45.wav",
+                "audioSlow": "d37-10f09a3422cc74c9.wav"
+              },
+              "note": "/tʃ/ vs /dʒ/"
+            },
+            {
+              "a": {
+                "word": "batch",
+                "ipa": "/bætʃ/",
+                "target": "tʃ",
+                "audio": "d37-7c7f3e30d25203bf.wav",
+                "audioSlow": "d37-367310efcb2d227a.wav"
+              },
+              "b": {
+                "word": "badge",
+                "ipa": "/bædʒ/",
+                "target": "dʒ",
+                "audio": "d37-aaf6baea38110efb.wav",
+                "audioSlow": "d37-a030ea7c046566bb.wav"
+              },
+              "note": "词尾清浊"
+            }
+          ]
+        },
+        {
+          "id": "d4-core-sentences",
+          "type": "sentences",
+          "titleZh": "③ 核心：3句听说＋录音对比（6–8分钟）",
+          "titleEn": "Listen, record, compare",
+          "tipZh": "注意 -ing 的 /ŋ/ 与 /tʃ dʒ/。录后并排回听。",
+          "items": [
+            {
+              "en": "Changing language habits is a real challenge.",
+              "focus": "changing /ŋ/；language /ŋ/；challenge /tʃ dʒ/",
+              "audio": "d37-7abb9ffeb2fb2fdc.wav",
+              "audioSlow": "d37-b8cd9822e0f3c12f.wav"
+            },
+            {
+              "en": "Community projects need careful thinking.",
+              "focus": "community /m/；thinking /ŋ/",
+              "audio": "d37-493188ad06cd4498.wav",
+              "audioSlow": "d37-2ca95b5618d07baf.wav"
+            },
+            {
+              "en": "Education and knowledge shape your future.",
+              "focus": "education /dʒ/；knowledge /n/；future /tʃ/",
+              "audio": "d37-7d71f9568d08e93c.wav",
+              "audioSlow": "d37-3477212a7cb76e65.wav"
+            }
+          ]
+        },
+        {
+          "id": "d4-optional-stress",
+          "type": "stress_tap",
+          "titleZh": "④ 选做：点重音（2–3分钟）",
+          "titleEn": "Optional stress",
+          "tipZh": "先听再点主重音。",
+          "items": [
+            {
+              "word": "education",
+              "ipa": "/ˌedʒuˈkeɪʃn/",
+              "syl": [
+                "ed",
+                "u",
+                "ca",
+                "tion"
+              ],
+              "stress": 2,
+              "gloss": "教育",
+              "audio": "d37-43671e7ce3c28fe1.wav",
+              "audioSlow": "d37-c977ac7bba46f13e.wav"
+            },
+            {
+              "word": "community",
+              "ipa": "/kəˈmjuːnəti/",
+              "syl": [
+                "com",
+                "mu",
+                "ni",
+                "ty"
+              ],
+              "stress": 1,
+              "gloss": "社区",
+              "audio": "d37-b398aad9f4cfab9c.wav",
+              "audioSlow": "d37-f0f117c55ce6976d.wav"
+            },
+            {
+              "word": "manager",
+              "ipa": "/ˈmænɪdʒə/",
+              "syl": [
+                "man",
+                "a",
+                "ger"
+              ],
+              "stress": 0,
+              "gloss": "经理",
+              "audio": "d37-2fdc3c6f4609a3b9.wav",
+              "audioSlow": "d37-d22dc58511f1e21a.wav"
+            }
+          ]
+        },
+        {
+          "id": "d4-optional-passage",
+          "type": "passage",
+          "titleZh": "⑤ 选做：情境朗读（3分钟）",
+          "titleEn": "Optional passage",
+          "tipZh": "整段听读并录音回听。",
+          "titlePassage": "Learning in a changing world",
+          "text": "Language learning is changing because of the internet. Students need knowledge and critical thinking. Joining a community project can be a challenge, but it helps you manage your future with more confidence.",
+          "focus": "language, changing, knowledge, thinking, community, challenge, manage, future",
+          "audio": "d37-0baaad2c219b41a0.wav",
+          "audioSlow": "d37-91da917a47865902.wav"
         }
       ]
     },
     {
       "id": 5,
-      "title": "Day 5 · 近音 / 流音（即将开放）",
-      "titleEn": "Approximants l r w j (coming soon)",
-      "focusZh": "Day 1–2 已开放。本天完整任务尚未开放。",
+      "title": "Day 5 · 近音 / 流音＋四组组合",
+      "titleEn": "Approximants and clusters",
+      "status": "review",
       "phonemes": [
         "l",
         "r",
         "w",
-        "j"
+        "j",
+        "tr",
+        "dr",
+        "ts",
+        "dz"
       ],
-      "status": "locked",
+      "focusZh": "同一天练 /l r w j/，并介绍四组常用组合 /tr dr ts dz/（补齐传统48教学项；它们不是四个独立基本音位）。核心约15–20分钟。",
+      "noteZh": "传统48教学项＝20元音＋24基本辅音＋tr/dr/ts/dz四组组合（并非48个独立音位）。核心15–20分钟；选做另计。纯听说，不考词性。面授日待老师定。示范音为 en-GB-SoniaNeural 神经合成，未逐条人工听审。弱读取决于语境与强调，不是重音靠后前元音就自动变短。 英式 /r/ 不宜过度卷舌；词尾 /l/ 可略偏暗。组合在核心句与选做中练习。",
       "sections": [
         {
-          "id": "d5-locked",
-          "type": "sentences",
-          "titleZh": "即将开放",
-          "titleEn": "Coming soon",
-          "tipZh": "完整任务尚未开放，请先练习 Day 1 与 Day 2。",
+          "id": "d5-core-words",
+          "type": "vowels",
+          "titleZh": "① 核心：8词听读（5–6分钟）",
+          "titleEn": "Eight approximant words",
+          "tipZh": "绿色标 /l r w j/。注意 light/right、west/vest 类对比放在下一节。",
+          "color": "short",
           "items": [
             {
-              "en": "Day 5 focuses on: l, r, w, j.",
-              "focus": "outline only"
+              "word": "lifestyle",
+              "ipa": "/ˈlaɪfstaɪl/",
+              "syl": [
+                "life",
+                "style"
+              ],
+              "stress": 0,
+              "target": "l",
+              "gloss": "生活方式",
+              "audio": "d37-6c00926a267162bd.wav",
+              "audioSlow": "d37-550edbda9088fce1.wav"
+            },
+            {
+              "word": "reliable",
+              "ipa": "/rɪˈlaɪəbl/",
+              "syl": [
+                "re",
+                "li",
+                "a",
+                "ble"
+              ],
+              "stress": 1,
+              "target": "l",
+              "gloss": "可靠的",
+              "audio": "d37-755039cd56807c05.wav",
+              "audioSlow": "d37-01843817f701c456.wav"
+            },
+            {
+              "word": "really",
+              "ipa": "/ˈrɪəli/",
+              "syl": [
+                "real",
+                "ly"
+              ],
+              "stress": 0,
+              "target": "r",
+              "gloss": "真正地",
+              "audio": "d37-0ab13becab22ab2f.wav",
+              "audioSlow": "d37-fa5dd486474ed437.wav"
+            },
+            {
+              "word": "research",
+              "ipa": "/rɪˈsɜːtʃ/",
+              "syl": [
+                "re",
+                "search"
+              ],
+              "stress": 1,
+              "target": "r",
+              "gloss": "研究",
+              "audio": "d37-53e7f65ccfa8b91c.wav",
+              "audioSlow": "d37-60a58c19e9c4ec6a.wav"
+            },
+            {
+              "word": "world",
+              "ipa": "/wɜːld/",
+              "syl": [
+                "world"
+              ],
+              "stress": 0,
+              "target": "w",
+              "gloss": "世界",
+              "audio": "d37-314168a53f79a2c6.wav",
+              "audioSlow": "d37-04e0130a35a6a455.wav"
+            },
+            {
+              "word": "aware",
+              "ipa": "/əˈweə/",
+              "syl": [
+                "a",
+                "ware"
+              ],
+              "stress": 1,
+              "target": "w",
+              "gloss": "意识到的",
+              "audio": "d37-e80b76c18ac63077.wav",
+              "audioSlow": "d37-d0a22fb453db1739.wav"
+            },
+            {
+              "word": "usual",
+              "ipa": "/ˈjuːʒuəl/",
+              "syl": [
+                "u",
+                "su",
+                "al"
+              ],
+              "stress": 0,
+              "target": "j",
+              "gloss": "平常的",
+              "audio": "d37-a2800faa1aacc32e.wav",
+              "audioSlow": "d37-3634d3fa3d7f9f81.wav"
+            },
+            {
+              "word": "year",
+              "ipa": "/jɪə/",
+              "syl": [
+                "year"
+              ],
+              "stress": 0,
+              "target": "j",
+              "gloss": "年",
+              "audio": "d37-a9568306f8bcbf97.wav",
+              "audioSlow": "d37-efc10d0cdaf37e2e.wav"
             }
           ]
+        },
+        {
+          "id": "d5-core-pairs",
+          "type": "minimal_pairs",
+          "titleZh": "② 核心：4组辨音（3–4分钟）",
+          "titleEn": "l/r and w/v contrasts",
+          "tipZh": "light/right、collect/correct：/l r/；west/vest：/w v/；year/ear：有无 /j/。基础词仅辨音。",
+          "pairs": [
+            {
+              "a": {
+                "word": "light",
+                "ipa": "/laɪt/",
+                "target": "l",
+                "audio": "d37-549820553fcb77e0.wav",
+                "audioSlow": "d37-658f79638b434816.wav"
+              },
+              "b": {
+                "word": "right",
+                "ipa": "/raɪt/",
+                "target": "r",
+                "audio": "d37-2b782b91468c05c1.wav",
+                "audioSlow": "d37-811d2789816eac2b.wav"
+              },
+              "note": "/l/ vs /r/"
+            },
+            {
+              "a": {
+                "word": "collect",
+                "ipa": "/kəˈlekt/",
+                "target": "l",
+                "audio": "d37-8eaccdfd705457eb.wav",
+                "audioSlow": "d37-72cd7b1b82da4e67.wav"
+              },
+              "b": {
+                "word": "correct",
+                "ipa": "/kəˈrekt/",
+                "target": "r",
+                "audio": "d37-668491aeee017e74.wav",
+                "audioSlow": "d37-dab64d3676d1d465.wav"
+              },
+              "note": "多音节 /l/ /r/"
+            },
+            {
+              "a": {
+                "word": "west",
+                "ipa": "/west/",
+                "target": "w",
+                "audio": "d37-9cfa7cd6fa985fa5.wav",
+                "audioSlow": "d37-4e1b4a21dd1d7612.wav"
+              },
+              "b": {
+                "word": "vest",
+                "ipa": "/vest/",
+                "target": "v",
+                "audio": "d37-459aa9544055cf45.wav",
+                "audioSlow": "d37-8f22f200c29e03ba.wav"
+              },
+              "note": "/w/ vs /v/"
+            },
+            {
+              "a": {
+                "word": "year",
+                "ipa": "/jɪə/",
+                "target": "j",
+                "audio": "d37-a9568306f8bcbf97.wav",
+                "audioSlow": "d37-efc10d0cdaf37e2e.wav"
+              },
+              "b": {
+                "word": "ear",
+                "ipa": "/ɪə/",
+                "target": "ɪə",
+                "audio": "d37-e666130fa00caba0.wav",
+                "audioSlow": "d37-99c9a996273555f5.wav"
+              },
+              "note": "有无 /j/"
+            }
+          ]
+        },
+        {
+          "id": "d5-core-sentences",
+          "type": "sentences",
+          "titleZh": "③ 核心：3句听说＋录音对比（6–8分钟）",
+          "titleEn": "Listen, record, compare",
+          "tipZh": "句中顺带练 /tr dr ts dz/ 组合。录后并排回听。",
+          "items": [
+            {
+              "en": "I really want a reliable career after this year.",
+              "focus": "really /r/；reliable /l/；year /j/",
+              "audio": "d37-c5d300d4e9c2698f.wav",
+              "audioSlow": "d37-e7583ce60532004d.wav"
+            },
+            {
+              "en": "We should be aware of the wider world.",
+              "focus": "aware /w/；world /w/",
+              "audio": "d37-4e4f4da7231c7e70.wav",
+              "audioSlow": "d37-e7f2530a8fc6be08.wav"
+            },
+            {
+              "en": "Traffic, drama clubs and sports attract hundreds of friends at weekends.",
+              "focus": "traffic /tr/；drama /dr/；sports /ts/；friends /dz/；weekends /dz/",
+              "audio": "d37-e7897f13dfef89b3.wav",
+              "audioSlow": "d37-156f8e0018ddcd2e.wav"
+            }
+          ]
+        },
+        {
+          "id": "d5-optional-clusters",
+          "type": "vowels",
+          "titleZh": "④ 选做：四组组合词（2–3分钟）",
+          "titleEn": "Optional clusters",
+          "tipZh": "/tr dr/ 为连缀；/ts dz/ 常见于词尾或复数。不是四个独立音位。",
+          "color": "short",
+          "items": [
+            {
+              "word": "traffic",
+              "ipa": "/ˈtræfɪk/",
+              "syl": [
+                "traf",
+                "fic"
+              ],
+              "stress": 0,
+              "target": "tr",
+              "gloss": "交通",
+              "audio": "d37-31086710c2395777.wav",
+              "audioSlow": "d37-1430a4dc90e2b695.wav"
+            },
+            {
+              "word": "drama",
+              "ipa": "/ˈdrɑːmə/",
+              "syl": [
+                "dra",
+                "ma"
+              ],
+              "stress": 0,
+              "target": "dr",
+              "gloss": "戏剧",
+              "audio": "d37-904140d3fa2131e5.wav",
+              "audioSlow": "d37-13c8e7ff1ea0042c.wav"
+            },
+            {
+              "word": "sports",
+              "ipa": "/spɔːts/",
+              "syl": [
+                "sports"
+              ],
+              "stress": 0,
+              "target": "ts",
+              "gloss": "体育运动",
+              "audio": "d37-c941cc84409e03b8.wav",
+              "audioSlow": "d37-5d290574ead8980b.wav"
+            },
+            {
+              "word": "friends",
+              "ipa": "/frendz/",
+              "syl": [
+                "friends"
+              ],
+              "stress": 0,
+              "target": "dz",
+              "gloss": "朋友",
+              "audio": "d37-b688602f10477919.wav",
+              "audioSlow": "d37-84f3e5d7fa9f27c6.wav"
+            }
+          ]
+        },
+        {
+          "id": "d5-optional-passage",
+          "type": "passage",
+          "titleZh": "⑤ 选做：情境朗读（3分钟）",
+          "titleEn": "Optional passage",
+          "tipZh": "整段听读并录音回听。",
+          "titlePassage": "Planning your year",
+          "text": "This year many teenagers review their lifestyle and career ideas. Stay aware, read reliable research, and really practise speaking a little every day. Local drama clubs and sports can also help.",
+          "focus": "year, lifestyle, career, aware, reliable, research, really, drama, sports",
+          "audio": "d37-ab24bbf8b71d1178.wav",
+          "audioSlow": "d37-c225bf622bae3ae7.wav"
         }
       ]
     },
     {
       "id": 6,
-      "title": "Day 6 · 双元音复习与情境迁移（即将开放）",
-      "titleEn": "Diphthong review and transfer (coming soon)",
-      "focusZh": "复习 Day 2 已介绍的合口双元音，作情境迁移；不是首次介绍。完整任务尚未开放。",
+      "title": "Day 6 · 合口双元音复习与迁移",
+      "titleEn": "Closing diphthong review",
+      "status": "review",
       "phonemes": [
         "eɪ",
         "aɪ",
@@ -1323,47 +2148,577 @@
         "aʊ",
         "əʊ"
       ],
-      "status": "locked",
+      "focusZh": "复习 Day2 已介绍的 /eɪ aɪ ɔɪ aʊ əʊ/，迁移到学习计划与选择话题；不是首次介绍。核心约15–20分钟，可按薄弱点选练。",
+      "noteZh": "传统48教学项＝20元音＋24基本辅音＋tr/dr/ts/dz四组组合（并非48个独立音位）。核心15–20分钟；选做另计。纯听说，不考词性。面授日待老师定。示范音为 en-GB-SoniaNeural 神经合成，未逐条人工听审。弱读取决于语境与强调，不是重音靠后前元音就自动变短。 本课不教新音位。",
       "sections": [
         {
-          "id": "d6-locked",
-          "type": "sentences",
-          "titleZh": "即将开放",
-          "titleEn": "Coming soon",
-          "tipZh": "完整任务尚未开放，请先练习 Day 1 与 Day 2。",
+          "id": "d6-core-words",
+          "type": "vowels",
+          "titleZh": "① 核心：8词复习听读（5–6分钟）",
+          "titleEn": "Eight review words",
+          "tipZh": "蓝色标目标双元音。注意滑动完整，不要发成单元音。",
+          "color": "long",
           "items": [
             {
-              "en": "Day 6 reviews closing diphthongs already introduced on Day 2. Full tasks are not open yet.",
-              "focus": "outline only · review transfer"
+              "word": "daily",
+              "ipa": "/ˈdeɪli/",
+              "syl": [
+                "dai",
+                "ly"
+              ],
+              "stress": 0,
+              "target": "eɪ",
+              "gloss": "每日的",
+              "audio": "d37-6b260815e2d468ad.wav",
+              "audioSlow": "d37-b7deb7462d9e16ed.wav"
+            },
+            {
+              "word": "explain",
+              "ipa": "/ɪkˈspleɪn/",
+              "syl": [
+                "ex",
+                "plain"
+              ],
+              "stress": 1,
+              "target": "eɪ",
+              "gloss": "解释",
+              "audio": "d37-2c28664f3f842d0c.wav",
+              "audioSlow": "d37-832dd8daf9b75824.wav"
+            },
+            {
+              "word": "decide",
+              "ipa": "/dɪˈsaɪd/",
+              "syl": [
+                "de",
+                "cide"
+              ],
+              "stress": 1,
+              "target": "aɪ",
+              "gloss": "决定",
+              "audio": "d37-6fe9b4851f4ccd37.wav",
+              "audioSlow": "d37-e1bd9dfd05897ac6.wav"
+            },
+            {
+              "word": "online",
+              "ipa": "/ˌɒnˈlaɪn/",
+              "syl": [
+                "on",
+                "line"
+              ],
+              "stress": 1,
+              "target": "aɪ",
+              "gloss": "在线的",
+              "audio": "d37-21ba9fc8a9bb52ec.wav",
+              "audioSlow": "d37-c96767d71310bc83.wav"
+            },
+            {
+              "word": "choice",
+              "ipa": "/tʃɔɪs/",
+              "syl": [
+                "choice"
+              ],
+              "stress": 0,
+              "target": "ɔɪ",
+              "gloss": "选择",
+              "audio": "d37-f24b90b97ff272b9.wav",
+              "audioSlow": "d37-d94050f3f1604d73.wav"
+            },
+            {
+              "word": "about",
+              "ipa": "/əˈbaʊt/",
+              "syl": [
+                "a",
+                "bout"
+              ],
+              "stress": 1,
+              "target": "aʊ",
+              "gloss": "关于",
+              "audio": "d37-01a167ac4d5414fc.wav",
+              "audioSlow": "d37-9fc1f68d69be08c2.wav"
+            },
+            {
+              "word": "focus",
+              "ipa": "/ˈfəʊkəs/",
+              "syl": [
+                "fo",
+                "cus"
+              ],
+              "stress": 0,
+              "target": "əʊ",
+              "gloss": "专注；焦点",
+              "audio": "d37-5153f989e8bf96a7.wav",
+              "audioSlow": "d37-1d12eb05bacae325.wav"
+            },
+            {
+              "word": "local",
+              "ipa": "/ˈləʊkl/",
+              "syl": [
+                "lo",
+                "cal"
+              ],
+              "stress": 0,
+              "target": "əʊ",
+              "gloss": "本地的",
+              "audio": "d37-559a0e4dc4ad072f.wav",
+              "audioSlow": "d37-c26d513dfb6abce3.wav"
             }
           ]
+        },
+        {
+          "id": "d6-core-pairs",
+          "type": "minimal_pairs",
+          "titleZh": "② 核心：4组辨音复习（3–4分钟）",
+          "titleEn": "Review contrasts",
+          "tipZh": "late/let：/eɪ e/；light/lot：开口对比；coat/caught：/əʊ ɔː/；now/nor：/aʊ ɔː/。",
+          "pairs": [
+            {
+              "a": {
+                "word": "late",
+                "ipa": "/leɪt/",
+                "target": "eɪ",
+                "audio": "d37-0635f74c81f54411.wav",
+                "audioSlow": "d37-f8c8cf00e33a186a.wav"
+              },
+              "b": {
+                "word": "let",
+                "ipa": "/let/",
+                "target": "e",
+                "audio": "d37-a96e7528d47669fa.wav",
+                "audioSlow": "d37-cbc25b4f472cc3f2.wav"
+              },
+              "note": "/eɪ/ vs /e/"
+            },
+            {
+              "a": {
+                "word": "light",
+                "ipa": "/laɪt/",
+                "target": "aɪ",
+                "audio": "d37-549820553fcb77e0.wav",
+                "audioSlow": "d37-658f79638b434816.wav"
+              },
+              "b": {
+                "word": "lot",
+                "ipa": "/lɒt/",
+                "target": "ɒ",
+                "audio": "d37-0b9045079662ee67.wav",
+                "audioSlow": "d37-1c80096bd14bc3db.wav"
+              },
+              "note": "开口滑动"
+            },
+            {
+              "a": {
+                "word": "coat",
+                "ipa": "/kəʊt/",
+                "target": "əʊ",
+                "audio": "d37-e2fdaeed7e0624ed.wav",
+                "audioSlow": "d37-caae3fc7054463af.wav"
+              },
+              "b": {
+                "word": "caught",
+                "ipa": "/kɔːt/",
+                "target": "ɔː",
+                "audio": "d37-2f2a2edecbe83b04.wav",
+                "audioSlow": "d37-1f126d27a7b8fd59.wav"
+              },
+              "note": "/əʊ/ vs /ɔː/"
+            },
+            {
+              "a": {
+                "word": "now",
+                "ipa": "/naʊ/",
+                "target": "aʊ",
+                "audio": "d37-85e3dd64740b299b.wav",
+                "audioSlow": "d37-bbd145c341bc21c0.wav"
+              },
+              "b": {
+                "word": "nor",
+                "ipa": "/nɔː/",
+                "target": "ɔː",
+                "audio": "d37-90dcd001b4a2bff5.wav",
+                "audioSlow": "d37-9a2760e67a83ca3e.wav"
+              },
+              "note": "/aʊ/ 滑动"
+            }
+          ]
+        },
+        {
+          "id": "d6-core-sentences",
+          "type": "sentences",
+          "titleZh": "③ 核心：3句复习录音（6–8分钟）",
+          "titleEn": "Review sentences",
+          "tipZh": "双元音滑动完整。录后回听对比。",
+          "items": [
+            {
+              "en": "Explain your choice and focus on a clear goal.",
+              "focus": "explain /eɪ/；choice /ɔɪ/；focus /əʊ/；goal /əʊ/",
+              "audio": "d37-61ba6f54775153f2.wav",
+              "audioSlow": "d37-c7b0cfcf7c908bd4.wav"
+            },
+            {
+              "en": "Decide about online learning for the local community.",
+              "focus": "decide /aɪ/；about /aʊ/；online /aɪ/；local /əʊ/",
+              "audio": "d37-d2dcee517839404c.wav",
+              "audioSlow": "d37-cb766c866e71a3f6.wav"
+            },
+            {
+              "en": "Daily practice allows you to improve your speaking.",
+              "focus": "daily /eɪ/；allows /aʊ/",
+              "audio": "d37-52b4c0abe471d789.wav",
+              "audioSlow": "d37-dbeafba52a2a175d.wav"
+            }
+          ]
+        },
+        {
+          "id": "d6-optional-stress",
+          "type": "stress_tap",
+          "titleZh": "④ 选做：点重音（2分钟）",
+          "titleEn": "Optional stress",
+          "tipZh": "复习重音位置。",
+          "items": [
+            {
+              "word": "explain",
+              "ipa": "/ɪkˈspleɪn/",
+              "syl": [
+                "ex",
+                "plain"
+              ],
+              "stress": 1,
+              "gloss": "解释",
+              "audio": "d37-2c28664f3f842d0c.wav",
+              "audioSlow": "d37-832dd8daf9b75824.wav"
+            },
+            {
+              "word": "online",
+              "ipa": "/ˌɒnˈlaɪn/",
+              "syl": [
+                "on",
+                "line"
+              ],
+              "stress": 1,
+              "gloss": "在线",
+              "audio": "d37-21ba9fc8a9bb52ec.wav",
+              "audioSlow": "d37-c96767d71310bc83.wav"
+            },
+            {
+              "word": "decide",
+              "ipa": "/dɪˈsaɪd/",
+              "syl": [
+                "de",
+                "cide"
+              ],
+              "stress": 1,
+              "gloss": "决定",
+              "audio": "d37-6fe9b4851f4ccd37.wav",
+              "audioSlow": "d37-e1bd9dfd05897ac6.wav"
+            }
+          ]
+        },
+        {
+          "id": "d6-optional-passage",
+          "type": "passage",
+          "titleZh": "⑤ 选做：情境朗读（3分钟）",
+          "titleEn": "Optional passage",
+          "tipZh": "整段复习录音。",
+          "titlePassage": "Making a choice",
+          "text": "Teenagers must decide about subject choice and future goals. Online tools allow daily practice, but you still need to explain your ideas clearly. Focus on local issues and make a choice you can stand by.",
+          "focus": "decide, choice, goals, online, allow, daily, explain, focus, local",
+          "audio": "d37-25231d6c0078481f.wav",
+          "audioSlow": "d37-608a8c80c4e8497d.wav"
         }
       ]
     },
     {
       "id": 7,
-      "title": "Day 7 · 集中双元音复习＋七日综合（即将开放）",
-      "titleEn": "Centring diphthong review and integrated practice (coming soon)",
-      "focusZh": "复习 Day 2 已介绍的 /ɪə eə ʊə/，并做综合迁移；不是首次介绍。完整任务尚未开放。/ʊə/ 现代英式可合并为 /ɔː/。",
+      "title": "Day 7 · 集中双元音复习＋七日综合",
+      "titleEn": "Centring diphthong review and week wrap-up",
+      "status": "review",
       "phonemes": [
         "ɪə",
         "eə",
         "ʊə"
       ],
-      "status": "locked",
+      "focusZh": "复习 Day2 已介绍的 /ɪə eə ʊə/，并结合全周辅音、重音与自然语流做综合录音；不是首次介绍。/ʊə/ 现代英式可为 /ɔː/。",
+      "noteZh": "传统48教学项＝20元音＋24基本辅音＋tr/dr/ts/dz四组组合（并非48个独立音位）。核心15–20分钟；选做另计。纯听说，不考词性。面授日待老师定。示范音为 en-GB-SoniaNeural 神经合成，未逐条人工听审。弱读取决于语境与强调，不是重音靠后前元音就自动变短。 tourist/sure/poor 等可能听到 /ɔː/ 变体，不判为错误。本课不作固定强弱读公式承诺。",
       "sections": [
         {
-          "id": "d7-locked",
-          "type": "sentences",
-          "titleZh": "即将开放",
-          "titleEn": "Coming soon",
-          "tipZh": "完整任务尚未开放，请先练习 Day 1 与 Day 2。",
+          "id": "d7-core-words",
+          "type": "vowels",
+          "titleZh": "① 核心：8词复习听读（5–6分钟）",
+          "titleEn": "Eight review words",
+          "tipZh": "注意滑向 /ə/。/ʊə/ 可听成 /ɔː/。",
+          "color": "long",
           "items": [
             {
-              "en": "Day 7 reviews centring diphthongs already introduced on Day 2. Full tasks are not open yet.",
-              "focus": "outline only · review transfer"
+              "word": "career",
+              "ipa": "/kəˈrɪə/",
+              "syl": [
+                "ca",
+                "reer"
+              ],
+              "stress": 1,
+              "target": "ɪə",
+              "gloss": "职业",
+              "audio": "d37-5455934280d471ba.wav",
+              "audioSlow": "d37-ea7fd37192e0a8ed.wav"
+            },
+            {
+              "word": "idea",
+              "ipa": "/aɪˈdɪə/",
+              "syl": [
+                "i",
+                "de",
+                "a"
+              ],
+              "stress": 1,
+              "target": "ɪə",
+              "gloss": "想法",
+              "audio": "d37-123267b5b18ba532.wav",
+              "audioSlow": "d37-e8e5712f29003b28.wav"
+            },
+            {
+              "word": "really",
+              "ipa": "/ˈrɪəli/",
+              "syl": [
+                "real",
+                "ly"
+              ],
+              "stress": 0,
+              "target": "ɪə",
+              "gloss": "真正地",
+              "audio": "d37-0ab13becab22ab2f.wav",
+              "audioSlow": "d37-fa5dd486474ed437.wav"
+            },
+            {
+              "word": "aware",
+              "ipa": "/əˈweə/",
+              "syl": [
+                "a",
+                "ware"
+              ],
+              "stress": 1,
+              "target": "eə",
+              "gloss": "意识到",
+              "audio": "d37-e80b76c18ac63077.wav",
+              "audioSlow": "d37-d0a22fb453db1739.wav"
+            },
+            {
+              "word": "prepare",
+              "ipa": "/prɪˈpeə/",
+              "syl": [
+                "pre",
+                "pare"
+              ],
+              "stress": 1,
+              "target": "eə",
+              "gloss": "准备",
+              "audio": "d37-6580f1b6d066c5ce.wav",
+              "audioSlow": "d37-2e5e7d2fbe30b87b.wav"
+            },
+            {
+              "word": "carefully",
+              "ipa": "/ˈkeəfəli/",
+              "syl": [
+                "care",
+                "ful",
+                "ly"
+              ],
+              "stress": 0,
+              "target": "eə",
+              "gloss": "仔细地",
+              "audio": "d37-7d311fba2bac2fb8.wav",
+              "audioSlow": "d37-78e463c4ccdda703.wav"
+            },
+            {
+              "word": "tourist",
+              "ipa": "/ˈtʊərɪst/",
+              "syl": [
+                "tour",
+                "ist"
+              ],
+              "stress": 0,
+              "target": "ʊə",
+              "gloss": "游客",
+              "audio": "d37-386dda96aa4cfd6a.wav",
+              "audioSlow": "d37-b8821c08d89125e2.wav"
+            },
+            {
+              "word": "sure",
+              "ipa": "/ʃʊə/",
+              "syl": [
+                "sure"
+              ],
+              "stress": 0,
+              "target": "ʊə",
+              "gloss": "确定的",
+              "audio": "d37-10bc1b1da9c57cd9.wav",
+              "audioSlow": "d37-db0bacd8a77c3048.wav"
             }
           ]
+        },
+        {
+          "id": "d7-core-pairs",
+          "type": "minimal_pairs",
+          "titleZh": "② 核心：4组辨音复习（3–4分钟）",
+          "titleEn": "Review contrasts",
+          "tipZh": "beer/bee：/ɪə iː/；care/key：听滑动；tour/two：/ʊə uː/；sure/shore：现代 /ʊə/≈/ɔː/ 对照。",
+          "pairs": [
+            {
+              "a": {
+                "word": "beer",
+                "ipa": "/bɪə/",
+                "target": "ɪə",
+                "audio": "d37-eff0db0ac78eff2a.wav",
+                "audioSlow": "d37-cca41000a3b5dabe.wav"
+              },
+              "b": {
+                "word": "bee",
+                "ipa": "/biː/",
+                "target": "iː",
+                "audio": "d37-3f87f8059a417b5c.wav",
+                "audioSlow": "d37-4c2b8b1197672199.wav"
+              },
+              "note": "/ɪə/ vs /iː/"
+            },
+            {
+              "a": {
+                "word": "care",
+                "ipa": "/keə/",
+                "target": "eə",
+                "audio": "d37-b8e51828a17b75e1.wav",
+                "audioSlow": "d37-f9ea935ac9a3c7ed.wav"
+              },
+              "b": {
+                "word": "key",
+                "ipa": "/kiː/",
+                "target": "iː",
+                "audio": "d37-30da5466255c62cb.wav",
+                "audioSlow": "d37-67972b96e5c699b4.wav"
+              },
+              "note": "听滑动"
+            },
+            {
+              "a": {
+                "word": "tour",
+                "ipa": "/tʊə/",
+                "target": "ʊə",
+                "audio": "d37-b233f144ed232db1.wav",
+                "audioSlow": "d37-430c85fea8503e3a.wav"
+              },
+              "b": {
+                "word": "two",
+                "ipa": "/tuː/",
+                "target": "uː",
+                "audio": "d37-ca4949eb693125e3.wav",
+                "audioSlow": "d37-137c6e924e176062.wav"
+              },
+              "note": "/ʊə/ vs /uː/"
+            },
+            {
+              "a": {
+                "word": "sure",
+                "ipa": "/ʃʊə/",
+                "target": "ʊə",
+                "audio": "d37-10bc1b1da9c57cd9.wav",
+                "audioSlow": "d37-db0bacd8a77c3048.wav"
+              },
+              "b": {
+                "word": "shore",
+                "ipa": "/ʃɔː/",
+                "target": "ɔː",
+                "audio": "d37-102c9800ae120a69.wav",
+                "audioSlow": "d37-e835709f6219f8e8.wav"
+              },
+              "note": "现代变体对照（可相近）"
+            }
+          ]
+        },
+        {
+          "id": "d7-core-sentences",
+          "type": "sentences",
+          "titleZh": "③ 核心：3句综合录音（6–8分钟）",
+          "titleEn": "Integrated sentences",
+          "tipZh": "把本周辅音与双元音串起来。不作固定弱读评分。",
+          "items": [
+            {
+              "en": "Prepare carefully for your career interview.",
+              "focus": "prepare /eə/；carefully /eə/；career /ɪə/",
+              "audio": "d37-0f1ba902f4b5700f.wav",
+              "audioSlow": "d37-bb9e27da6b8fd19c.wav"
+            },
+            {
+              "en": "Make sure tourists respect the local area.",
+              "focus": "sure /ʊə/；tourists /ʊə/；area /eə/",
+              "audio": "d37-bbb98018f526617b.wav",
+              "audioSlow": "d37-8bd6c82ef3a897df.wav"
+            },
+            {
+              "en": "I really need an idea about my future path.",
+              "focus": "really /ɪə/；idea /ɪə/；about /aʊ/",
+              "audio": "d37-1d30a66184c68046.wav",
+              "audioSlow": "d37-536fd035de9e8a8e.wav"
+            }
+          ]
+        },
+        {
+          "id": "d7-optional-stress",
+          "type": "stress_tap",
+          "titleZh": "④ 选做：综合重音（2分钟）",
+          "titleEn": "Optional stress",
+          "tipZh": "点出主重音。",
+          "items": [
+            {
+              "word": "prepare",
+              "ipa": "/prɪˈpeə/",
+              "syl": [
+                "pre",
+                "pare"
+              ],
+              "stress": 1,
+              "gloss": "准备",
+              "audio": "d37-6580f1b6d066c5ce.wav",
+              "audioSlow": "d37-2e5e7d2fbe30b87b.wav"
+            },
+            {
+              "word": "carefully",
+              "ipa": "/ˈkeəfəli/",
+              "syl": [
+                "care",
+                "ful",
+                "ly"
+              ],
+              "stress": 0,
+              "gloss": "仔细地",
+              "audio": "d37-7d311fba2bac2fb8.wav",
+              "audioSlow": "d37-78e463c4ccdda703.wav"
+            },
+            {
+              "word": "opportunity",
+              "ipa": "/ˌɒpəˈtjuːnəti/",
+              "syl": [
+                "op",
+                "por",
+                "tu",
+                "ni",
+                "ty"
+              ],
+              "stress": 2,
+              "gloss": "机会",
+              "audio": "d37-843cd3d31d468b18.wav",
+              "audioSlow": "d37-2f69a513af2dc2de.wav"
+            }
+          ]
+        },
+        {
+          "id": "d7-optional-passage",
+          "type": "passage",
+          "titleZh": "⑤ 选做：七日综合短文（3–4分钟）",
+          "titleEn": "Final passage",
+          "tipZh": "本周总测：整段录音并并排对比示范。",
+          "titlePassage": "Ready for the speaking test",
+          "text": "To prepare for a speaking test, be aware of clear sounds, word stress and natural rhythm. Listen carefully to model audio, then record your own ideas about careers, travel or the environment. Make sure you really practise every day. Experience grows when you review, improve and try again.",
+          "focus": "prepare, aware, carefully, careers, environment, sure, really, experience, review, improve",
+          "audio": "d37-4240da4403daf763.wav",
+          "audioSlow": "d37-1d21f54dd690705b.wav"
         }
       ]
     }
