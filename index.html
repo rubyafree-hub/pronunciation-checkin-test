@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#1d4ed8" />
-<title>HKDSE 发音听说打卡 · Day 1–2</title>
+<title>HKDSE 发音听说打卡 · Day 1–7</title>
 <style>
 :root{
   --bg:#f3f6fb; --card:#fff; --text:#0f172a; --muted:#64748b; --line:#e2e8f0;
@@ -129,7 +129,7 @@ audio{width:100%;height:36px}
 <body>
 <div id="app"></div>
 <div class="toast" id="toast"></div>
-<script src="./content.js?v=20261107-day2"></script>
+<script src="./content.js?v=20261109-day3"></script>
 <script>
 (function(){
 'use strict';
@@ -324,9 +324,21 @@ async function playModel(file, text, slow, audioEl){
 }
 
 /* ---------- UI helpers ---------- */
+function dayFromQuery(){
+  const fallback = 1;
+  try{
+    const params = new URLSearchParams(location.search);
+    if(!params.has('day')) return fallback;
+    const raw = params.get('day');
+    if(!/^[1-9]\d*$/.test(raw || '')) return fallback;
+    const n = Number(raw);
+    if(DATA && DATA.days && DATA.days.some(d => d.id === n)) return n;
+  }catch(e){}
+  return fallback;
+}
 const state = {
   tab: 'practice', // practice | progress | feedback
-  dayId: 1,
+  dayId: dayFromQuery(),
   store: ensureStudent(loadStore()),
   recKey: null,
   recBlob: null,
@@ -503,7 +515,7 @@ function viewPractice(){
     <div class="row" style="margin-top:10px;gap:8px">
       <input type="text" id="student-name" placeholder="输入学生姓名" value="${escapeHtml(state.store.studentName||'')}" style="flex:1" />
     </div>
-    <div class="muted tiny" style="margin-top:8px">选择天数（课堂约 4 天教完，任务跑满 7 天）</div>
+    <div class="muted tiny" style="margin-top:8px">选择天数（七天任务；哪四天面授由老师另定）</div>
     <div class="day-grid" id="day-grid">
       ${DATA.days.map(d=>{
         const c=countDay(d); const all=c.total&&c.done===c.total;
@@ -514,7 +526,7 @@ function viewPractice(){
       <div class="row between"><b>${escapeHtml(day.title)}</b><span class="pill">${done}/${total}</span></div>
       <div class="muted small" style="margin-top:4px">${escapeHtml(day.focusZh)}</div>
       <div class="bar mt" style="margin-top:8px"><i style="width:${pct}%"></i></div>
-      <div class="legend"><span><i class="dot" style="background:var(--long)"></i>长元音高亮</span><span><i class="dot" style="background:var(--short)"></i>短元音高亮</span></div>
+      <div class="legend"><span><i class="dot" style="background:var(--long)"></i>蓝色：元音长音 / 当日目标</span><span><i class="dot" style="background:var(--short)"></i>绿色：元音短音 / 当日目标</span></div>
       ${day.noteZh?`<div class="tip">${escapeHtml(day.noteZh)}</div>`:''}
     </div>
   </div>`;
